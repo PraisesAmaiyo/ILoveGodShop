@@ -78,7 +78,8 @@ body.home {
       height: 94vh; }
       body.home .home-container .hero-text {
         text-align: left;
-        padding: 2rem 4rem; }
+        padding: 2rem;
+        padding-left: 3rem; }
         body.home .home-container .hero-text-main {
           font-size: 4.5rem;
           line-height: 1.1;
@@ -253,7 +254,6 @@ select {
 .hero-btn-light,
 .hero-btn-dark_square {
   position: relative;
-  background-color: #ec1a23;
   background: linear-gradient(to bottom, #fe353e, #ec1a23);
   color: #fff;
   font-size: 1.6rem;
@@ -267,8 +267,7 @@ select {
   box-shadow: inset 0 0 0 1px #ec1a23;
   transform-origin: center;
   margin-right: 2rem;
-  text-decoration: none;
-  height: 5rem; }
+  text-decoration: none; }
   .hero-btn-dark.sign-in,
   .hero-btn-light.sign-in,
   .hero-btn-dark_square.sign-in {
@@ -551,7 +550,7 @@ select {
   .navigation-header .main-nav-list {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center; }
   .navigation-header .main-nav-link:link,
   .navigation-header .main-nav-link:visited {
@@ -559,7 +558,8 @@ select {
     text-decoration: none;
     color: #ec1a23;
     font-weight: 500;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    padding: 1rem; }
     .navigation-header .main-nav-link:link::before,
     .navigation-header .main-nav-link:visited::before {
       position: absolute;
@@ -576,15 +576,13 @@ select {
         font-size: 4rem; } }
   .navigation-header .main-nav-link:hover,
   .navigation-header .main-nav-link:active {
-    transform: scale(1.1);
-    padding: 1rem;
-    transform: scale(1.01);
-    box-shadow: inset 0 0 0 2px #ec1a23;
+    padding: .5rem 1rem;
+    box-shadow: inset 0 0 0 1px #ec1a23;
     border-radius: 5px; }
   .navigation-header .hero-btn-dark,
   .navigation-header .hero-btn-light {
-    font-size: 1.8rem;
-    padding: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
     margin-right: 0; }
     @media only screen and (max-width: 50.3em) {
       .navigation-header .hero-btn-dark,

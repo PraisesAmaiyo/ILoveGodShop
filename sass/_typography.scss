@@ -146,7 +146,7 @@ select {
 .hero-btn-light,
 .hero-btn-dark_square {
    position: relative;
-   background-color: $color-primary;
+   // background-color: $color-primary;
    background: linear-gradient(to bottom, $color-primary-500, $color-primary-600);
    color: $color-grey-light-1;
    font-size: 1.6rem;
@@ -161,7 +161,7 @@ select {
    transform-origin: center;
    margin-right: 2rem;
    text-decoration: none;
-   height: 5rem;
+   // height: 5rem;
 
    &.sign-in {
       width: 100%;
