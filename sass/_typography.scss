@@ -1,0 +1,281 @@
+.naira-input-container input {
+   padding-left: 3rem;
+}
+
+.naira-input-container {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+.naira {
+   position: absolute;
+   font-family: inherit;
+   font-weight: 500;
+   color: $color-secondary-dark;
+   font-size: 1.6rem;
+   left: 10px;
+   // top: 50%;
+   // transform: translateY(-50%);
+}
+
+label {
+   display: block;
+   text-align: left;
+   font-size: 1.8rem;
+   font-weight: 500;
+   margin-bottom: .5rem;
+   color: $color-secondary-dark;
+}
+
+input,
+select {
+   margin-bottom: 2rem;
+   height: 5rem;
+   width: 100%;
+   outline: 1.5px solid $color-grey-dark-1;
+   padding: 1rem;
+   padding-left: 3rem;
+   font-size: 1.6rem;
+   font-family: inherit;
+   font-weight: 500;
+   color: $color-secondary-600;
+   border: none;
+   background-color: #ffffff;
+   border-radius: 50px;
+   box-shadow: 0 1px 2px rgba($color-secondary-600, .5);
+   transition: all 0.3s ease;
+
+   @media only screen and (max-width:$bp-small) {
+      width: 100%;
+   }
+
+
+
+   &:focus,
+   &:valid {
+      background-color: $color-grey-light-1;
+      box-shadow: 0 0 0.3rem 0.5rem rgba($color-secondary-600, .36);
+   }
+}
+
+.double-input {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+
+   @media only screen and (max-width:$bp-small) {
+      display: block;
+   }
+
+   .simReg-method-form_input {
+      width: 100%;
+   }
+
+   & input {
+      width: 100%;
+   }
+}
+
+select {
+   padding: .5rem;
+   width: max-content;
+
+   &:focus,
+   &:valid {
+      background-color: $color-grey-light-2;
+      box-shadow: 0 0 0.3rem 0.1rem rgba($color-primary-light, .36);
+   }
+
+   &:active,
+   &:focus {
+      background-color: $color-grey-light-2;
+      box-shadow: 0 0 0.3rem 0.5rem rgba($color-primary-light, .36);
+   }
+}
+
+.checkbox {
+   margin-left: 3rem;
+   margin-top: 2rem;
+   font-size: 1.8rem;
+   font-family: inherit;
+   font-weight: 500;
+
+   &-container {
+      display: flex;
+      align-items: center;
+
+      & input[type="checkbox"] {
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         width: 2rem;
+         height: 2rem;
+         border-radius: 100%;
+         border: 2px solid $color-primary;
+         background-color: $color-grey-light-1;
+         margin-right: 1rem;
+         cursor: pointer;
+      }
+
+      & input:checked {
+         background-color: $color-primary;
+         box-shadow: inset 0 0 0 1.5px $color-primary-light-1;
+      }
+
+      & label {
+         // font-size: 16px;
+         cursor: pointer;
+      }
+   }
+}
+
+.close {
+   position: absolute;
+   top: 0rem;
+   right: 1.5rem;
+   color: $color-secondary-dark;
+   font-size: 3rem;
+   padding: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.hero-btn-dark,
+.hero-btn-light,
+.hero-btn-dark_square {
+   position: relative;
+   background-color: $color-primary;
+   background: linear-gradient(to bottom, $color-primary-500, $color-primary-600);
+   color: $color-grey-light-1;
+   font-size: 1.6rem;
+   font-weight: 600;
+   font-family: $font-primary;
+   text-transform: uppercase;
+   cursor: pointer;
+   padding: 1rem 1.5rem;
+   border-radius: 1rem;
+   border: none;
+   box-shadow: inset 0 0 0 1px $color-primary;
+   transform-origin: center;
+   margin-right: 2rem;
+   text-decoration: none;
+   height: 5rem;
+
+   &.sign-in {
+      width: 100%;
+      text-align: center;
+      border-radius: 50px;
+   }
+
+   &:not(:last-child) {
+      margin-right: 1.5rem;
+
+      @media only screen and (max-width:$bp-largest) {
+         margin-bottom: 1.5rem;
+      }
+   }
+
+   &:hover {
+      background: linear-gradient(to bottom, $color-primary-600, $color-primary-700);
+      transform: scale(1.01);
+      box-shadow: inset 0 0 0 2px $color-primary;
+   }
+
+   &:active {
+      transform: scale(1);
+      background: linear-gradient(to bottom, $color-primary-700, $color-primary-800);
+      background-color: $color-grey-dark-1;
+
+      box-shadow: inset 0 1px $color-primary-700, 0 3px $color-primary-700;
+   }
+
+   .button-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: inherit;
+      text-decoration: none;
+   }
+}
+
+.hero-btn-light {
+   background-color: $color-grey-dark-1;
+   color: $color-grey-light-1;
+   box-shadow: inset 0px 0px 0px 2px $color-primary-light;
+   padding: .8rem 1.5rem;
+
+   &:hover {
+      transform: scale(1.07);
+      background-color: $color-secondary-light;
+   }
+
+   &:active {
+      transform: scale(1.04);
+      background-color: $color-secondary-light;
+   }
+}
+
+.hero-btn-dark_square {
+   border-radius: 5px;
+   margin-right: 1.5rem;
+}
+
+.adminHeader {
+   display: flex;
+   flex-direction: column;
+   width: max-content;
+   gap: 1rem;
+   margin: 2rem 0;
+}
+
+.center-button {
+   display: flex;
+   justify-content: center;
+}
+
+.py-1 {
+   padding: 1rem;
+}
+
+.px-2 {
+   padding-top: 2rem;
+}
+
+.mb-1 {
+   margin-bottom: 1rem;
+}
+
+.mb-2 {
+   margin-bottom: 2rem;
+}
+
+.mt-2 {
+   margin-top: 2rem;
+}
+
+.heading-text {
+   text-align: center;
+   font-size: 5rem;
+   margin-bottom: 1.5rem;
+}
+
+.heading-subtext {
+   // text-align: left;
+   font-size: 1.8rem;
+}
+
+.heading-minitext {
+   // text-align: left;
+   font-size: 1.5rem;
+}
+
+.hidden {
+   display: none;
+}

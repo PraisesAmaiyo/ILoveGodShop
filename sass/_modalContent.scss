@@ -1,0 +1,144 @@
+.modal {
+   padding: 3rem;
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 60%;
+   max-width: 100rem;
+   height: max-content;
+   z-index: 10000;
+   transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+
+   @media only screen and (max-width:$bp-big) {
+      padding: 1.7rem;
+      width: 70%;
+   }
+
+   @media only screen and (max-width:$bp-medium) {
+      width: 85%;
+      padding: 2rem;
+      transform: translate(-50%, -50%);
+   }
+
+   @media only screen and (max-width:$bp-small) {
+      width: 90%;
+      padding: 1.3rem;
+
+   }
+
+   &.active,
+   &.openModal {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .3s ease-in-out, visibility .2s;
+   }
+}
+
+.main.blur,
+.sidebar.blur {
+   backdrop-filter: blur(1px);
+   filter: blur(1px);
+}
+
+.main.blur::before,
+.sidebar.blur::before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.46);
+   z-index: 2222222;
+}
+
+.sidebar.blur {
+   .sidebar-fixed {
+      width: 100%;
+   }
+
+   @media only screen and (max-width:$bp-big) {
+      backdrop-filter: blur(0px);
+      filter: none;
+   }
+
+   &::before {
+
+      @media only screen and (max-width:$bp-big) {
+         background-color: none;
+      }
+   }
+}
+
+.addProduct,
+.sellProduct,
+.updatePrice {
+   .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-left: 0;
+      margin-top: 1.5rem;
+
+      label {
+         margin-bottom: 0;
+      }
+
+      @media only screen and (max-width:$bp-small) {
+         .checkbox-container {
+            padding-bottom: 0;
+         }
+      }
+   }
+
+   &-form {
+
+      &_input {
+         margin-top: 2rem;
+         display: flex;
+         align-items: center;
+
+         &.sellStatus {
+            display: block;
+
+            label {
+               width: min-content;
+            }
+         }
+
+         @media only screen and (max-width:$bp-small) {
+            margin-top: 1.5rem;
+            display: block;
+         }
+
+         label {
+            width: 20rem;
+         }
+
+         input,
+         select {
+            width: 100%;
+
+            &:disabled {
+               background-color: $color-grey-light-2;
+               box-shadow: 0 0 0.2rem 0.5rem rgba($color-secondary-light, .36);
+               color: #999;
+               border: 1px solid #ddd;
+               cursor: not-allowed;
+            }
+         }
+      }
+   }
+
+   .hero-btn-dark {
+      display: inline;
+      margin-top: 3rem;
+      align-self: center;
+      padding: 1rem 3rem;
+      margin-top: 2rem;
+
+   }
+}

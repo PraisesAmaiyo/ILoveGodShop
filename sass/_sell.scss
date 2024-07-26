@@ -1,0 +1,74 @@
+// Most CSS for Sell can be found in table.scss and modalContents.scss
+
+.sellProduct {
+   height: min-content;
+   color: $color-secondary-dark;
+
+   &-method {
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      overflow: hidden;
+
+      &-form {
+
+         &_input {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+
+            .autocomplete-list {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               position: absolute;
+               z-index: 1;
+               width: 30rem;
+               border: 1px solid #ccc;
+               border-bottom: 4px solid #ccc;
+               max-height: 15rem;
+               overflow-y: auto;
+               border-radius: 4px;
+               display: none;
+
+               @media only screen and (max-width:$bp-smaller) {
+                  width: 75%;
+               }
+
+               &::-webkit-scrollbar {
+                  width: .8rem;
+
+                  &-thumb {
+                     background-color: $color-primary;
+                     border-radius: 10px;
+
+                     &:active {
+                        background-color: $color-primary-light;
+                     }
+                  }
+
+                  &-track {
+                     background-color: $color-primary-light-1;
+                  }
+               }
+
+
+               &-item {
+                  padding: 10px;
+                  cursor: pointer;
+                  background-color: $color-grey-light-1;
+                  border-bottom: 1px solid $color-primary;
+                  transition: background-color 0.2s;
+
+                  &:hover {
+                     background-color: $color-grey-dark-1;
+                     color: $color-primary-light-1;
+                  }
+               }
+            }
+         }
+
+         .hero-btn-dark {
+            margin-top: 3rem;
+         }
+      }
+   }
+}

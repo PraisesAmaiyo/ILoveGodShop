@@ -1,0 +1,163 @@
+// COLOR VARIABLES
+$color-primary: #ec1a23;
+$color-primary-light: #ec1a23;
+$color-primary-light-1: #ebfbee;
+$color-secondary-light: #F89942;
+$color-secondary-dark: #205329;
+$color-grey-light-1: #fff;
+$color-grey-light-2: #eef1f6;
+$color-grey-dark-1: #0F7A89;
+$color-grey-dark-2: #15464C;
+$color-grey-dark-3: #6FC1CC;
+
+
+$color-primary-50: #fff1f2;
+$color-primary-100: #ffe0e1;
+$color-primary-200: #ffc6c8;
+$color-primary-300: #ff9da1;
+$color-primary-400: #ff656c;
+$color-primary-500: #fe353e;
+$color-primary-600: #ec1a23;
+$color-primary-700: #c70e16;
+$color-primary-800: #a41016;
+$color-primary-900: #87151a;
+$color-primary-950: #4a0508;
+
+$color-secondary-50: #f2f7fd;
+$color-secondary-100: #e3eefb;
+$color-secondary-200: #c1ddf6;
+$color-secondary-300: #8bc0ee;
+$color-secondary-400: #4da0e3;
+$color-secondary-500: #2684d1;
+$color-secondary-600: #1868b1;
+$color-secondary-700: #16599a;
+$color-secondary-800: #154777;
+$color-secondary-900: #173d63;
+$color-secondary-950: #0f2742;
+
+
+
+
+
+// FONT VARIABLES
+$font-primary: 'Inter Tight', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE VARIABLES
+// RESPONSIVE VARIABLES
+$bp-largest: 75em; //
+$bp-larger: 62.5em; //
+$bp-big: 50.3em; //
+$bp-large: 45.7em; //
+$bp-largeDns: 43.3em; //
+$bp-medium: 38.6em; //
+$bp-mid: 35.6em; //
+$bp-small: 30.5em; //
+$bp-small-extra: 25.5em; //
+$bp-smaller: 18.8em; //
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+
+   @media only screen and (max-width:$bp-small-extra) {
+      font-size: 50%;
+   }
+}
+
+body {
+   font-family: $font-primary;
+   background-color: $color-grey-light-1;
+   font-weight: 300;
+   line-height: 1.4;
+
+   scrollbar-width: thin;
+   scrollbar-color: transparent transparent;
+   overflow: -webkit-scrollbar;
+   scrollbar-width: thin;
+
+   &::-webkit-scrollbar {
+      width: .8rem;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: $color-primary;
+      border-radius: 10px;
+
+      &:active {
+         background-color: $color-primary-light;
+      }
+   }
+
+   &::-webkit-scrollbar-track {
+      background-color: $color-primary-light-1;
+   }
+
+   a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+         color: #0056b3;
+         text-decoration: underline;
+      }
+
+      &:active {
+         color: #003d80;
+      }
+
+      &:visited {
+         color: #0056b3;
+      }
+
+      &:focus {
+         outline-offset: 2px;
+      }
+   }
+}
+
+// .container {
+//    overflow-x: hidden;
+//    display: grid;
+//    grid-template-columns: [sidebar-start] 23% [sidebar-end main-start] 1fr [main-end];
+//    grid-template-rows: [rowOne-start] 100vh [rowOne-end rowTwo-start] min-content [rowTwo-end];
+
+//    @media only screen and (max-width:$bp-big) {
+//       grid-template-columns: [main-start] 100vw [main-end];
+//       grid-template-rows: [rowOne-start] 93vh [rowOne-end];
+//       margin-bottom: 7rem;
+//       // grid-template-rows: [rowOne-start] 100% [rowOne-end rowTwo-start] 17% [rowTwo-end];
+//    }
+
+//    .sidebar-fixed {
+//       // Change this width when you adjust the width of [sidebar-start] 23% [sidebar-end] above.
+//       width: 23%;
+
+//       @media only screen and (max-width:$bp-big) {
+//          width: 100%;
+//       }
+//    }
+// }
+
+.card {
+   background-color: $color-primary-light-1;
+   background-size: cover;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 1rem 1.5rem;
+   box-shadow: rgba($color-primary-light, 0.3) 0px 1px 1px;
+   margin-bottom: 2rem;
+
+   @media only screen and (max-width:$bp-medium) {
+      padding: 1rem;
+   }
+}
