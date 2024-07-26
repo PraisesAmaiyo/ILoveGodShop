@@ -59,7 +59,7 @@ body {
 body.home {
   display: flex;
   justify-content: center;
-  padding: 6rem 4rem; }
+  padding: 5rem 2rem; }
   body.home .home-container {
     width: 120rem;
     position: relative; }
@@ -74,7 +74,8 @@ body.home {
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      height: 94vh; }
       body.home .home-container .hero-text {
         text-align: left;
         padding: 2rem 4rem; }
@@ -85,7 +86,7 @@ body.home {
           color: #fff;
           margin-bottom: 2.5rem; }
         body.home .home-container .hero-text-mini {
-          font-size: 2.5rem;
+          font-size: 2rem;
           line-height: 1.2;
           font-weight: 500;
           color: #eef1f6; }
@@ -99,47 +100,44 @@ body.home {
         body.home .home-container .hero-btn-dark {
           margin-right: 1.5rem; }
       body.home .home-container .hero-image {
-        height: 70%;
-        width: auto; }
-        @media only screen and (max-width: 50.3em) {
-          body.home .home-container .hero-image {
-            text-align: center;
-            padding-top: 4rem; } }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 90%;
+        padding: 2rem;
+        overflow: hidden;
+        border-radius: 10px; }
         body.home .home-container .hero-image_image {
-          height: 100%; }
-          @media only screen and (max-width: 62.5em) {
-            body.home .home-container .hero-image_image {
-              height: 50%; } }
-          @media only screen and (max-width: 50.3em) {
-            body.home .home-container .hero-image_image {
-              width: 80%; } }
-          @media only screen and (max-width: 30.5em) {
-            body.home .home-container .hero-image_image {
-              width: 100%; } }
-    body.home .home-container .delivered-emails {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.6rem; }
-      @media only screen and (max-width: 50.3em) {
-        body.home .home-container .delivered-emails {
-          display: flex;
-          justify-content: center;
-          align-items: center; } }
-      body.home .home-container .delivered-emails .delivered-text {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: #F89942;
-        margin-top: 1.5rem; }
-        @media only screen and (max-width: 62.5em) {
-          body.home .home-container .delivered-emails .delivered-text {
-            font-size: 1.5rem; } }
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px; }
+      body.home .home-container .hero .delivered-emails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem; }
         @media only screen and (max-width: 50.3em) {
-          body.home .home-container .delivered-emails .delivered-text {
-            font-size: 3rem; } }
-      body.home .home-container .delivered-emails .delivered-text span {
-        color: #fff;
-        font-weight: 700; }
+          body.home .home-container .hero .delivered-emails {
+            display: flex;
+            justify-content: center;
+            align-items: center; } }
+        body.home .home-container .hero .delivered-emails .delivered-text {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #F89942;
+          margin-top: 1.5rem; }
+          @media only screen and (max-width: 62.5em) {
+            body.home .home-container .hero .delivered-emails .delivered-text {
+              font-size: 1.5rem; } }
+          @media only screen and (max-width: 50.3em) {
+            body.home .home-container .hero .delivered-emails .delivered-text {
+              font-size: 3rem; } }
+        body.home .home-container .hero .delivered-emails .delivered-text span {
+          color: #fff;
+          font-weight: 700; }
 
 .naira-input-container input {
   padding-left: 3rem; }
@@ -537,16 +535,16 @@ select {
 
 .navigation-header {
   position: absolute;
-  top: -4rem;
+  top: -3rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff1f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7rem;
+  height: 6rem;
   padding: 0 3rem;
-  width: 85%;
+  width: 87%;
   border-radius: 3px; }
   .navigation-header .logo {
     height: 2.5rem; }
@@ -578,11 +576,11 @@ select {
         font-size: 4rem; } }
   .navigation-header .main-nav-link:hover,
   .navigation-header .main-nav-link:active {
-    transform: scale(1.1); }
-    .navigation-header .main-nav-link:hover::before,
-    .navigation-header .main-nav-link:active::before {
-      transition: .3s;
-      width: 100%; }
+    transform: scale(1.1);
+    padding: 1rem;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 0 2px #ec1a23;
+    border-radius: 5px; }
   .navigation-header .hero-btn-dark,
   .navigation-header .hero-btn-light {
     font-size: 1.8rem;
@@ -701,7 +699,7 @@ body.container.login-container {
       align-items: center;
       gap: 4rem;
       text-align: center;
-      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.83)), url(/img/ilovegod-chocoloate.webp);
+      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.83)), url(/img/main-image-2.jpg);
       background-size: cover;
       overflow: hidden; }
       body.container.login-container .login .login-image .logo {
@@ -732,7 +730,7 @@ body.container.signup-container {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(77, 160, 227, 0.93), rgba(24, 104, 177, 0.93)), url(/img/bg-image.png);
+  background-image: linear-gradient(to right, rgba(77, 160, 227, 0.93), rgba(24, 104, 177, 0.93)), url(/img/main-image-2.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
   body.container.signup-container .signup {
@@ -757,7 +755,7 @@ body.container.signup-container {
       align-items: center;
       gap: 4rem;
       text-align: center;
-      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.83)), url(/img/ilovegod-chocoloate.webp);
+      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.83)), url(/img/main-image-2.jpg);
       background-size: cover;
       overflow: hidden; }
       body.container.signup-container .signup .signup-image .logo {

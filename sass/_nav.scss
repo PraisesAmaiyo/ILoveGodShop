@@ -1,6 +1,6 @@
 .navigation-header {
    position: absolute;
-   top: -4rem;
+   top: -3rem;
    left: 50%;
    transform: translateX(-50%);
 
@@ -9,9 +9,9 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 7rem;
+   height: 6rem;
    padding: 0 3rem;
-   width: 85%;
+   width: 87%;
    border-radius: 3px;
 
    .logo {
@@ -53,10 +53,16 @@
    .main-nav-link:active {
       transform: scale(1.1);
 
-      &::before {
-         transition: .3s;
-         width: 100%;
-      }
+      // background: linear-gradient(to bottom, $color-primary-600, $color-primary-700);
+      padding: 1rem;
+      transform: scale(1.01);
+      box-shadow: inset 0 0 0 2px $color-primary;
+      border-radius: 5px;
+
+      // &::before {
+      //    transition: .3s;
+      //    width: 100%;
+      // }
    }
 
    .hero-btn-dark,
