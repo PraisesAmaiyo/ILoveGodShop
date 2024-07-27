@@ -208,7 +208,7 @@ body.home {
           font-weight: 400; }
     body.home .home-container .section-abouts {
       padding: 3rem 2rem;
-      background-color: #fff;
+      background-color: #fffefe;
       display: grid;
       grid-template-columns: repeat(2, 50%);
       gap: 2rem;

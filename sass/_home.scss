@@ -313,7 +313,8 @@ body.home {
 
       .section-abouts {
          padding: 3rem 2rem;
-         background-color: $color-grey-light-1;
+         // background-color: $color-grey-light-1;
+         background-color: #fffefe;
          display: grid;
          grid-template-columns: repeat(2, 50%);
          gap: 2rem;
