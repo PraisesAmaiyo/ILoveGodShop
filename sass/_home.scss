@@ -208,14 +208,25 @@ body.home {
       }
 
       .section-features {
-         padding: 4rem 2rem;
-         background-color: #f9f9f9;
+         position: relative;
+         padding: 6rem 2rem;
+         background-color: $color-primary-50;
          display: grid;
          grid-template-columns: repeat(2, 50%);
          gap: 2rem;
          justify-content: center;
          align-items: center;
          height: max-content;
+
+         .fill-space {
+            position: absolute;
+            top: -3rem;
+            height: 3rem;
+            width: 100%;
+            background-color: $color-primary-50;
+            z-index: -9999;
+
+         }
 
          &__cards {
             display: grid;
@@ -230,18 +241,18 @@ body.home {
                border-radius: 6px;
                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-               padding: 2rem 1.5rem;
+               padding: 4rem 1.5rem;
                text-align: center;
                display: flex;
                flex-direction: column;
-               transition: transform 0.3s ease, box-shadow 0.3s ease;
+               transition: all 0.3s ease;
                // height: 20rem;
                // justify-content: center;
                // max-width: 350px;
 
                &:hover {
                   // transform: translateY(-10px);
-                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.93), rgba($color-secondary-700, 0.93)), url(/img/main-image-2.jpg);
+                  background-image: linear-gradient(to right, rgba($color-secondary-500, 0.93), rgba($color-secondary-700, 0.93)), url(/img/main-image-2.jpg);
                   background-size: cover;
                   background-position: center;
                   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -282,10 +293,11 @@ body.home {
          &__texts {
             padding: 0 6rem;
 
+
             .feature-heading {
                font-size: 3.7rem;
                font-weight: 700;
-               margin-bottom: 1.5rem;
+               margin-bottom: 1.2rem;
 
                span {
                   color: $color-primary-900;
@@ -299,5 +311,73 @@ body.home {
          }
       }
 
+      .section-abouts {
+         padding: 3rem 2rem;
+         background-color: $color-grey-light-1;
+         display: grid;
+         grid-template-columns: repeat(2, 50%);
+         gap: 2rem;
+         justify-content: center;
+         align-items: center;
+         height: max-content;
+
+         &_image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            padding: .5rem 2rem;
+            overflow: hidden;
+            border-radius: 10px;
+
+            // @media only screen and (max-width:$bp-big) {
+            //    text-align: center;
+            //    padding-top: 4rem;
+            // }
+
+
+            .about-image {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               object-position: center;
+               border-radius: 10px;
+
+               //    @media only screen and (max-width:$bp-larger) {
+               //       height: 50%
+               //    }
+
+               //    @media only screen and (max-width:$bp-big) {
+               //       width: 80%;
+               //    }
+
+               //    @media only screen and (max-width:$bp-small) {
+               //       width: 100%;
+               //    }
+               // }
+            }
+
+         }
+
+         &__texts {
+            padding: 0 6rem;
+
+            .tag {
+               color: $color-primary-800;
+            }
+
+            .about-heading {
+               font-size: 4.5rem;
+               font-weight: 700;
+               margin-bottom: 1.2rem;
+            }
+
+            .about-subtext {
+               font-size: 1.3rem;
+               font-weight: 400;
+            }
+         }
+      }
    }
 }
