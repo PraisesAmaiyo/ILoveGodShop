@@ -206,5 +206,98 @@ body.home {
             }
          }
       }
+
+      .section-features {
+         padding: 4rem 2rem;
+         background-color: #f9f9f9;
+         display: grid;
+         grid-template-columns: repeat(2, 50%);
+         gap: 2rem;
+         justify-content: center;
+         align-items: center;
+         height: max-content;
+
+         &__cards {
+            display: grid;
+            // grid-template-columns: repeat(2, 50%);
+            grid-template-columns: repeat(2, minmax(15rem, 1fr));
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            height: max-content;
+
+            .feature-card {
+               background-color: #fff;
+               border-radius: 6px;
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+               box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+               padding: 2rem 1.5rem;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               transition: transform 0.3s ease, box-shadow 0.3s ease;
+               // height: 20rem;
+               // justify-content: center;
+               // max-width: 350px;
+
+               &:hover {
+                  // transform: translateY(-10px);
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.93), rgba($color-secondary-700, 0.93)), url(/img/main-image-2.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+                  .feature-card__icon {
+                     color: $color-grey-light-1;
+                  }
+
+                  .feature-card__title {
+                     color: $color-grey-light-1;
+                  }
+
+                  .feature-card__text {
+                     color: $color-grey-light-1;
+                  }
+               }
+
+               &__icon {
+                  font-size: 3rem;
+                  color: $color-primary-600;
+                  margin-bottom: 1.3rem;
+                  transition: color 0.3s ease;
+               }
+
+               &__title {
+                  font-size: 1.5rem;
+                  color: #333;
+                  margin-bottom: .8rem;
+               }
+
+               &__text {
+                  font-size: 1.2rem;
+                  color: #666;
+               }
+            }
+         }
+
+         &__texts {
+            padding: 0 6rem;
+
+            .feature-heading {
+               font-size: 3.7rem;
+               font-weight: 700;
+               margin-bottom: 1.5rem;
+
+               span {
+                  color: $color-primary-900;
+               }
+            }
+
+            .feature-subtext {
+               font-size: 1.3rem;
+               font-weight: 400;
+            }
+         }
+      }
+
    }
 }

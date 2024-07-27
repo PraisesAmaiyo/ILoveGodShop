@@ -139,6 +139,65 @@ body.home {
         body.home .home-container .hero .delivered-emails .delivered-text span {
           color: #fff;
           font-weight: 700; }
+    body.home .home-container .section-features {
+      padding: 4rem 2rem;
+      background-color: #f9f9f9;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      height: max-content; }
+      body.home .home-container .section-features__cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(15rem, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5rem;
+        height: max-content; }
+        body.home .home-container .section-features__cards .feature-card {
+          background-color: #fff;
+          border-radius: 6px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+          padding: 2rem 1.5rem;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.3s ease, box-shadow 0.3s ease; }
+          body.home .home-container .section-features__cards .feature-card:hover {
+            background-image: linear-gradient(to right, rgba(24, 104, 177, 0.93), rgba(22, 89, 154, 0.93)), url(/img/main-image-2.jpg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+            body.home .home-container .section-features__cards .feature-card:hover .feature-card__icon {
+              color: #fff; }
+            body.home .home-container .section-features__cards .feature-card:hover .feature-card__title {
+              color: #fff; }
+            body.home .home-container .section-features__cards .feature-card:hover .feature-card__text {
+              color: #fff; }
+          body.home .home-container .section-features__cards .feature-card__icon {
+            font-size: 3rem;
+            color: #ec1a23;
+            margin-bottom: 1.3rem;
+            transition: color 0.3s ease; }
+          body.home .home-container .section-features__cards .feature-card__title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: .8rem; }
+          body.home .home-container .section-features__cards .feature-card__text {
+            font-size: 1.2rem;
+            color: #666; }
+      body.home .home-container .section-features__texts {
+        padding: 0 6rem; }
+        body.home .home-container .section-features__texts .feature-heading {
+          font-size: 3.7rem;
+          font-weight: 700;
+          margin-bottom: 1.5rem; }
+          body.home .home-container .section-features__texts .feature-heading span {
+            color: #87151a; }
+        body.home .home-container .section-features__texts .feature-subtext {
+          font-size: 1.3rem;
+          font-weight: 400; }
 
 .naira-input-container input {
   padding-left: 3rem; }
@@ -353,8 +412,7 @@ select {
   margin-top: 2rem; }
 
 .heading-text {
-  text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem; }
 
 .heading-subtext {
