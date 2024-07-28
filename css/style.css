@@ -232,13 +232,44 @@ body.home {
           border-radius: 10px; }
       body.home .home-container .section-abouts__texts {
         padding: 0 6rem; }
-        body.home .home-container .section-abouts__texts .tag {
-          color: #a41016; }
         body.home .home-container .section-abouts__texts .about-heading {
           font-size: 4.5rem;
           font-weight: 700;
           margin-bottom: 1.2rem; }
         body.home .home-container .section-abouts__texts .about-subtext {
+          font-size: 1.3rem;
+          font-weight: 400; }
+    body.home .home-container .section-testimonial {
+      padding: 3rem 2rem;
+      background-color: #e3eefb;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      height: max-content; }
+      body.home .home-container .section-testimonial_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: .5rem 2rem;
+        overflow: hidden;
+        border-radius: 10px; }
+        body.home .home-container .section-testimonial_image .testimonial-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px; }
+      body.home .home-container .section-testimonial__texts {
+        padding: 0 6rem; }
+        body.home .home-container .section-testimonial__texts .testimonial-heading {
+          font-size: 4.5rem;
+          font-weight: 700;
+          margin-bottom: 1.2rem; }
+        body.home .home-container .section-testimonial__texts .testimonial-subtext {
           font-size: 1.3rem;
           font-weight: 400; }
 
@@ -468,7 +499,9 @@ select {
   display: block;
   text-transform: uppercase;
   font-size: 1rem;
-  margin-bottom: 1.5rem; }
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: .3rem; }
 
 .hidden {
   display: none; }
@@ -894,52 +927,58 @@ body.container.signup-container {
     .pos-method-form .hero-btn-dark {
       margin-top: 3rem; }
 
-.sellProduct {
-  height: min-content;
-  color: #205329; }
-  .sellProduct-method {
-    margin: 0 auto;
-    padding: 1rem 2rem;
+div.swiper-3 {
+  margin: 2.5rem auto;
+  width: 100%;
+  height: auto;
+  padding: 0 4rem 6rem 4rem; }
+  div.swiper-3 .testimonial-slider {
+    position: relative;
+    padding-bottom: 4rem;
     overflow: hidden; }
-    .sellProduct-method-form_input {
-      margin-top: 2rem;
-      font-size: 1.5rem; }
-      .sellProduct-method-form_input .autocomplete-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        z-index: 1;
-        width: 30rem;
-        border: 1px solid #ccc;
-        border-bottom: 4px solid #ccc;
-        max-height: 15rem;
-        overflow-y: auto;
-        border-radius: 4px;
-        display: none; }
-        @media only screen and (max-width: 18.8em) {
-          .sellProduct-method-form_input .autocomplete-list {
-            width: 75%; } }
-        .sellProduct-method-form_input .autocomplete-list::-webkit-scrollbar {
-          width: .8rem; }
-          .sellProduct-method-form_input .autocomplete-list::-webkit-scrollbar-thumb {
-            background-color: #ec1a23;
-            border-radius: 10px; }
-            .sellProduct-method-form_input .autocomplete-list::-webkit-scrollbar-thumb:active {
-              background-color: #ec1a23; }
-          .sellProduct-method-form_input .autocomplete-list::-webkit-scrollbar-track {
-            background-color: #ebfbee; }
-        .sellProduct-method-form_input .autocomplete-list-item {
-          padding: 10px;
-          cursor: pointer;
-          background-color: #fff;
-          border-bottom: 1px solid #ec1a23;
-          transition: background-color 0.2s; }
-          .sellProduct-method-form_input .autocomplete-list-item:hover {
-            background-color: #0F7A89;
-            color: #ebfbee; }
-    .sellProduct-method-form .hero-btn-dark {
-      margin-top: 3rem; }
+  div.swiper-3 .testimonial-item {
+    text-align: center;
+    border: 0.1rem solid var(--grey);
+    border-radius: 0.5rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; }
+    div.swiper-3 .testimonial-item:hover {
+      border-color: var(--orange); }
+    div.swiper-3 .testimonial-item .quote {
+      position: absolute;
+      top: -100px;
+      right: 0;
+      font-size: 30rem;
+      color: rgba(254, 53, 62, 0.09);
+      z-index: -100; }
+    div.swiper-3 .testimonial-item .client-comment {
+      color: var(--grey);
+      font-size: 1.3rem;
+      line-height: 1.5;
+      font-style: italic;
+      text-align: left; }
+    div.swiper-3 .testimonial-item .client-info {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2.2rem; }
+      div.swiper-3 .testimonial-item .client-info .client-image {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        border: 0.5rem solid var(--white); }
+      div.swiper-3 .testimonial-item .client-info_basic {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem; }
+        div.swiper-3 .testimonial-item .client-info_basic .client-name {
+          font-size: 1.5rem; }
+  div.swiper-3 .swiper-pagination {
+    bottom: 0; }
+    div.swiper-3 .swiper-pagination .swiper-pagination-bullet-active {
+      background: #1868b1; }
 
 .modal {
   padding: 3rem;

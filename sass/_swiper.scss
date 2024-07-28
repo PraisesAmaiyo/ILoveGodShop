@@ -1,0 +1,78 @@
+div.swiper-3 {
+   margin: 2.5rem auto;
+   width: 100%;
+   height: auto;
+   padding: 0 4rem 6rem 4rem;
+
+
+   .testimonial-slider {
+      position: relative;
+      padding-bottom: 4rem;
+      overflow: hidden;
+
+   }
+
+   .testimonial-item {
+      text-align: center;
+      border: 0.1rem solid var(--grey);
+      border-radius: 0.5rem;
+      padding: 4rem 2rem;
+      background-color: $color-grey-light-1;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+         border-color: var(--orange);
+      }
+
+      .quote {
+         position: absolute;
+         top: -100px;
+         right: 0;
+         font-size: 30rem;
+         color: rgba($color-primary-500, 0.09);
+         z-index: -100;
+      }
+
+      .client-comment {
+         color: var(--grey);
+         font-size: 1.3rem;
+         line-height: 1.5;
+         font-style: italic;
+         text-align: left;
+      }
+
+      .client-info {
+         display: flex;
+         gap: 2rem;
+         align-items: center;
+         margin-top: 2.2rem;
+
+         .client-image {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+            border: 0.5rem solid var(--white);
+         }
+
+
+         &_basic {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            .client-name {
+               font-size: 1.5rem;
+            }
+         }
+      }
+   }
+
+   .swiper-pagination {
+      bottom: 0;
+
+      .swiper-pagination-bullet-active {
+         background: $color-secondary-600;
+      }
+   }
+}

@@ -364,10 +364,6 @@ body.home {
          &__texts {
             padding: 0 6rem;
 
-            .tag {
-               color: $color-primary-800;
-            }
-
             .about-heading {
                font-size: 4.5rem;
                font-weight: 700;
@@ -375,6 +371,71 @@ body.home {
             }
 
             .about-subtext {
+               font-size: 1.3rem;
+               font-weight: 400;
+            }
+         }
+      }
+
+      .section-testimonial {
+         padding: 3rem 2rem;
+         background-color: $color-secondary-100;
+         display: grid;
+         grid-template-columns: repeat(2, 50%);
+         gap: 2rem;
+         justify-content: center;
+         align-items: center;
+         height: max-content;
+
+         &_image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            padding: .5rem 2rem;
+            overflow: hidden;
+            border-radius: 10px;
+
+            // @media only screen and (max-width:$bp-big) {
+            //    text-align: center;
+            //    padding-top: 4rem;
+            // }
+
+
+            .testimonial-image {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               object-position: center;
+               border-radius: 10px;
+
+               //    @media only screen and (max-width:$bp-larger) {
+               //       height: 50%
+               //    }
+
+               //    @media only screen and (max-width:$bp-big) {
+               //       width: 80%;
+               //    }
+
+               //    @media only screen and (max-width:$bp-small) {
+               //       width: 100%;
+               //    }
+               // }
+            }
+
+         }
+
+         &__texts {
+            padding: 0 6rem;
+
+            .testimonial-heading {
+               font-size: 4.5rem;
+               font-weight: 700;
+               margin-bottom: 1.2rem;
+            }
+
+            .testimonial-subtext {
                font-size: 1.3rem;
                font-weight: 400;
             }
