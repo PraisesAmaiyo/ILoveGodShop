@@ -541,6 +541,7 @@ body.home {
                      font-size: 1.2rem;
                      text-transform: uppercase;
                      color: white;
+                     cursor: pointer;
                   }
                }
 
@@ -563,6 +564,7 @@ body.home {
 
                      &:hover {
                         transform: scale(1.1);
+                        cursor: pointer;
                      }
                   }
                }
