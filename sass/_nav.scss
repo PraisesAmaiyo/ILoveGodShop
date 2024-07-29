@@ -1,7 +1,8 @@
 .navigation-header {
    position: absolute;
-   top: -3rem;
+   top: 2rem;
    left: 50%;
+   z-index: 9999999;
    transform: translateX(-50%);
 
    // background-image: linear-gradient(to right, rgba($color-primary-light, 1), rgba($color-primary, .7));
@@ -9,13 +10,13 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 6rem;
-   padding: 0 3rem;
-   width: 87%;
-   border-radius: 3px;
+   height: 7rem;
+   width: 100rem;
+   padding: 2rem 3rem;
+   border-radius: 5px;
 
    .logo {
-      height: 2.5rem;
+      height: 4.5rem;
    }
 
    .main-nav-list {

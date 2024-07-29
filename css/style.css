@@ -56,222 +56,225 @@ body {
     .card {
       padding: 1rem; } }
 
-body.home {
-  display: flex;
-  justify-content: center;
-  padding: 5rem 2rem; }
-  body.home .home-container {
-    width: 120rem;
+body.home .home-container {
+  position: relative; }
+  body.home .home-container .section-hero {
+    background-color: #fff1f2;
+    padding: 5rem 3rem;
     position: relative; }
-    body.home .home-container .section-hero {
-      background-image: linear-gradient(to right, rgba(164, 16, 22, 0.9), rgba(135, 21, 26, 0.9)), url(../img/home.jpeg);
-      background-size: cover;
-      background-position: center;
-      border-radius: 25px; }
-    body.home .home-container .hero {
+    body.home .home-container .section-hero .hero {
+      padding: 0 3rem;
+      position: relative;
+      height: 94vh;
+      max-width: 120rem;
+      margin: 0 auto;
       text-align: center;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      height: 94vh; }
-      body.home .home-container .hero-text {
+      background-image: linear-gradient(to right, rgba(164, 16, 22, 0.9), rgba(135, 21, 26, 0.9)), url(../img/home.jpeg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 25px; }
+      body.home .home-container .section-hero .hero-text {
         text-align: left;
         padding: 2rem;
         padding-left: 3rem; }
-        body.home .home-container .hero-text-main {
+        body.home .home-container .section-hero .hero-text-main {
           font-size: 4.5rem;
           line-height: 1.1;
           font-weight: 700;
           color: #fff;
           margin-bottom: 2.5rem; }
-        body.home .home-container .hero-text-mini {
+        body.home .home-container .section-hero .hero-text-mini {
           font-size: 2rem;
           line-height: 1.2;
           font-weight: 500;
           color: #eef1f6; }
-      body.home .home-container .hero-btn {
+      body.home .home-container .section-hero .hero-btn {
         margin-top: 2rem; }
-        body.home .home-container .hero-btn-text {
+        body.home .home-container .section-hero .hero-btn-text {
           font-size: 2rem;
           font-weight: 500;
           color: #eef1f6;
           margin: 1rem 0 2rem 0; }
-        body.home .home-container .hero-btn-dark {
+        body.home .home-container .section-hero .hero-btn-dark {
           margin-right: 1.5rem; }
-      body.home .home-container .hero-image {
+      body.home .home-container .section-hero .hero-image {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 90%;
         width: 90%;
         padding: 2rem;
+        margin-top: 3rem;
         overflow: hidden;
         border-radius: 10px; }
-        body.home .home-container .hero-image_image {
+        body.home .home-container .section-hero .hero-image_image {
           width: 100%;
           height: 100%;
           object-fit: cover;
           object-position: center;
           border-radius: 10px; }
-      body.home .home-container .hero .delivered-emails {
+      body.home .home-container .section-hero .hero .delivered-emails {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1.6rem; }
         @media only screen and (max-width: 50.3em) {
-          body.home .home-container .hero .delivered-emails {
+          body.home .home-container .section-hero .hero .delivered-emails {
             display: flex;
             justify-content: center;
             align-items: center; } }
-        body.home .home-container .hero .delivered-emails .delivered-text {
+        body.home .home-container .section-hero .hero .delivered-emails .delivered-text {
           font-size: 1.4rem;
           font-weight: 600;
           color: #F89942;
           margin-top: 1.5rem; }
           @media only screen and (max-width: 62.5em) {
-            body.home .home-container .hero .delivered-emails .delivered-text {
+            body.home .home-container .section-hero .hero .delivered-emails .delivered-text {
               font-size: 1.5rem; } }
           @media only screen and (max-width: 50.3em) {
-            body.home .home-container .hero .delivered-emails .delivered-text {
+            body.home .home-container .section-hero .hero .delivered-emails .delivered-text {
               font-size: 3rem; } }
-        body.home .home-container .hero .delivered-emails .delivered-text span {
+        body.home .home-container .section-hero .hero .delivered-emails .delivered-text span {
           color: #fff;
           font-weight: 700; }
-    body.home .home-container .section-features {
-      position: relative;
-      padding: 6rem 2rem;
+  body.home .home-container .section-features {
+    position: relative;
+    padding: 6rem 3rem;
+    height: max-content;
+    background-color: #fff1f2; }
+    body.home .home-container .section-features .features-container {
+      max-width: 120rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center; }
+    body.home .home-container .section-features .fill-space {
+      position: absolute;
+      top: -3rem;
+      height: 3rem;
+      max-width: 120rem;
       background-color: #fff1f2;
+      z-index: -9999; }
+    body.home .home-container .section-features__cards {
       display: grid;
-      grid-template-columns: repeat(2, 50%);
-      gap: 2rem;
-      justify-content: center;
-      align-items: center;
+      grid-template-columns: repeat(2, minmax(15rem, 1fr));
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1.5rem;
       height: max-content; }
-      body.home .home-container .section-features .fill-space {
-        position: absolute;
-        top: -3rem;
-        height: 3rem;
-        width: 100%;
-        background-color: #fff1f2;
-        z-index: -9999; }
-      body.home .home-container .section-features__cards {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(15rem, 1fr));
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1.5rem;
-        height: max-content; }
-        body.home .home-container .section-features__cards .feature-card {
-          background-color: #fff;
-          border-radius: 6px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-          padding: 4rem 1.5rem;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          transition: all 0.3s ease; }
-          body.home .home-container .section-features__cards .feature-card:hover {
-            background-image: linear-gradient(to right, rgba(38, 132, 209, 0.93), rgba(22, 89, 154, 0.93)), url(/img/main-image-2.jpg);
-            background-size: cover;
-            background-position: center;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
-            body.home .home-container .section-features__cards .feature-card:hover .feature-card__icon {
-              color: #fff; }
-            body.home .home-container .section-features__cards .feature-card:hover .feature-card__title {
-              color: #fff; }
-            body.home .home-container .section-features__cards .feature-card:hover .feature-card__text {
-              color: #fff; }
-          body.home .home-container .section-features__cards .feature-card__icon {
-            font-size: 3rem;
-            color: #ec1a23;
-            margin-bottom: 1.3rem;
-            transition: color 0.3s ease; }
-          body.home .home-container .section-features__cards .feature-card__title {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: .8rem; }
-          body.home .home-container .section-features__cards .feature-card__text {
-            font-size: 1.2rem;
-            color: #666; }
-      body.home .home-container .section-features__texts {
-        padding: 0 6rem; }
-        body.home .home-container .section-features__texts .feature-heading {
-          font-size: 3.7rem;
-          font-weight: 700;
-          margin-bottom: 1.2rem; }
-          body.home .home-container .section-features__texts .feature-heading span {
-            color: #87151a; }
-        body.home .home-container .section-features__texts .feature-subtext {
-          font-size: 1.3rem;
-          font-weight: 400; }
-    body.home .home-container .section-abouts {
-      padding: 3rem 2rem;
-      background-color: #fffefe;
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      gap: 2rem;
-      justify-content: center;
-      align-items: center;
-      height: max-content; }
-      body.home .home-container .section-abouts_image {
+      body.home .home-container .section-features__cards .feature-card {
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        padding: 4rem 1.5rem;
+        text-align: center;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        padding: .5rem 2rem;
-        overflow: hidden;
-        border-radius: 10px; }
-        body.home .home-container .section-abouts_image .about-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-          border-radius: 10px; }
-      body.home .home-container .section-abouts__texts {
-        padding: 0 6rem; }
-        body.home .home-container .section-abouts__texts .about-heading {
-          font-size: 4.5rem;
-          font-weight: 700;
-          margin-bottom: 1.2rem; }
-        body.home .home-container .section-abouts__texts .about-subtext {
-          font-size: 1.3rem;
-          font-weight: 400; }
-    body.home .home-container .section-testimonial {
-      padding: 3rem 2rem;
-      background-color: #e3eefb;
+        flex-direction: column;
+        transition: all 0.3s ease; }
+        body.home .home-container .section-features__cards .feature-card:hover {
+          background-image: linear-gradient(to right, rgba(38, 132, 209, 0.93), rgba(22, 89, 154, 0.93)), url(/img/main-image-2.jpg);
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+          body.home .home-container .section-features__cards .feature-card:hover .feature-card__icon {
+            color: #fff; }
+          body.home .home-container .section-features__cards .feature-card:hover .feature-card__title {
+            color: #fff; }
+          body.home .home-container .section-features__cards .feature-card:hover .feature-card__text {
+            color: #fff; }
+        body.home .home-container .section-features__cards .feature-card__icon {
+          font-size: 3rem;
+          color: #ec1a23;
+          margin-bottom: 1.3rem;
+          transition: color 0.3s ease; }
+        body.home .home-container .section-features__cards .feature-card__title {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: .8rem; }
+        body.home .home-container .section-features__cards .feature-card__text {
+          font-size: 1.2rem;
+          color: #666; }
+    body.home .home-container .section-features__texts {
+      padding: 0 6rem; }
+      body.home .home-container .section-features__texts .feature-heading {
+        font-size: 3.7rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem; }
+        body.home .home-container .section-features__texts .feature-heading span {
+          color: #87151a; }
+      body.home .home-container .section-features__texts .feature-subtext {
+        font-size: 1.3rem;
+        font-weight: 400; }
+  body.home .home-container .section-abouts {
+    padding: 3rem 3rem;
+    background-color: #fffefe;
+    height: max-content; }
+    body.home .home-container .section-abouts .abouts-container {
+      max-width: 120rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(2, 50%);
       gap: 2rem;
       justify-content: center;
+      align-items: center; }
+    body.home .home-container .section-abouts_image {
+      display: flex;
       align-items: center;
-      height: max-content; }
-      body.home .home-container .section-testimonial_image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      padding: .5rem 2rem;
+      overflow: hidden;
+      border-radius: 10px; }
+      body.home .home-container .section-abouts_image .about-image {
         width: 100%;
-        padding: .5rem 2rem;
-        overflow: hidden;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
         border-radius: 10px; }
-        body.home .home-container .section-testimonial_image .testimonial-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-          border-radius: 10px; }
-      body.home .home-container .section-testimonial__texts {
-        padding: 0 6rem; }
-        body.home .home-container .section-testimonial__texts .testimonial-heading {
-          font-size: 4.5rem;
-          font-weight: 700;
-          margin-bottom: 1.2rem; }
-        body.home .home-container .section-testimonial__texts .testimonial-subtext {
-          font-size: 1.3rem;
-          font-weight: 400; }
+    body.home .home-container .section-abouts__texts {
+      padding: 0 6rem; }
+      body.home .home-container .section-abouts__texts .about-heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem; }
+      body.home .home-container .section-abouts__texts .about-subtext {
+        font-size: 1.3rem;
+        font-weight: 400; }
+  body.home .home-container .section-testimonial {
+    padding: 3rem 3rem;
+    background-color: #e3eefb;
+    height: max-content; }
+    body.home .home-container .section-testimonial .testimonial-container {
+      max-width: 120rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center; }
+    body.home .home-container .section-testimonial__texts {
+      padding: 0 6rem; }
+      body.home .home-container .section-testimonial__texts .testimonial-heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem; }
+      body.home .home-container .section-testimonial__texts .testimonial-subtext {
+        font-size: 1.3rem;
+        font-weight: 400; }
 
 .naira-input-container input {
   padding-left: 3rem; }
@@ -674,19 +677,20 @@ select {
 
 .navigation-header {
   position: absolute;
-  top: -3rem;
+  top: 2rem;
   left: 50%;
+  z-index: 9999999;
   transform: translateX(-50%);
   background-color: #fff1f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
-  padding: 0 3rem;
-  width: 87%;
-  border-radius: 3px; }
+  height: 7rem;
+  width: 100rem;
+  padding: 2rem 3rem;
+  border-radius: 5px; }
   .navigation-header .logo {
-    height: 2.5rem; }
+    height: 4.5rem; }
   .navigation-header .main-nav-list {
     list-style: none;
     display: flex;
@@ -931,21 +935,20 @@ div.swiper-3 {
   margin: 2.5rem auto;
   width: 100%;
   height: auto;
-  padding: 0 4rem 6rem 4rem; }
-  div.swiper-3 .testimonial-slider {
-    position: relative;
-    padding-bottom: 4rem;
-    overflow: hidden; }
+  padding: 0 4rem 6rem 4rem;
+  position: relative;
+  padding-bottom: 4rem;
+  overflow: hidden; }
   div.swiper-3 .testimonial-item {
     text-align: center;
     border: 0.1rem solid var(--grey);
     border-radius: 0.5rem;
     padding: 4rem 2rem;
+    height: auto;
+    width: 100%;
     background-color: #fff;
     position: relative;
     overflow: hidden; }
-    div.swiper-3 .testimonial-item:hover {
-      border-color: var(--orange); }
     div.swiper-3 .testimonial-item .quote {
       position: absolute;
       top: -100px;
@@ -977,6 +980,8 @@ div.swiper-3 {
           font-size: 1.5rem; }
   div.swiper-3 .swiper-pagination {
     bottom: 0; }
+    div.swiper-3 .swiper-pagination .swiper-pagination-bullet {
+      background: #4da0e3; }
     div.swiper-3 .swiper-pagination .swiper-pagination-bullet-active {
       background: #1868b1; }
 

@@ -4,26 +4,22 @@ div.swiper-3 {
    height: auto;
    padding: 0 4rem 6rem 4rem;
 
+   position: relative;
+   padding-bottom: 4rem;
+   overflow: hidden;
 
-   .testimonial-slider {
-      position: relative;
-      padding-bottom: 4rem;
-      overflow: hidden;
 
-   }
 
    .testimonial-item {
       text-align: center;
       border: 0.1rem solid var(--grey);
       border-radius: 0.5rem;
       padding: 4rem 2rem;
+      height: auto;
+      width: 100%;
       background-color: $color-grey-light-1;
       position: relative;
       overflow: hidden;
-
-      &:hover {
-         border-color: var(--orange);
-      }
 
       .quote {
          position: absolute;
@@ -71,8 +67,15 @@ div.swiper-3 {
    .swiper-pagination {
       bottom: 0;
 
+      .swiper-pagination-bullet {
+         background: $color-secondary-400;
+         ;
+      }
+
       .swiper-pagination-bullet-active {
          background: $color-secondary-600;
       }
+
+
    }
 }
