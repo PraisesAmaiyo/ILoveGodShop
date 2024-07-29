@@ -275,6 +275,99 @@ body.home .home-container {
       body.home .home-container .section-testimonial__texts .testimonial-subtext {
         font-size: 1.3rem;
         font-weight: 400; }
+  body.home .home-container .section-footer {
+    padding: 3rem 3rem;
+    background-color: #173d63;
+    color: white;
+    height: max-content; }
+    body.home .home-container .section-footer .footer-container {
+      max-width: 120rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 0 auto; }
+    body.home .home-container .section-footer__newsletter {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 4rem 0;
+      border-bottom: .1px solid white; }
+      body.home .home-container .section-footer__newsletter .newsletter-text {
+        width: 50%; }
+        body.home .home-container .section-footer__newsletter .newsletter-text .footer-heading {
+          font-size: 4.5rem;
+          font-weight: 700;
+          margin-bottom: 1.2rem; }
+        body.home .home-container .section-footer__newsletter .newsletter-text .footer-subtext {
+          font-size: 1.3rem;
+          font-weight: 400; }
+      body.home .home-container .section-footer__newsletter .newsletter-cta {
+        width: 40%; }
+        body.home .home-container .section-footer__newsletter .newsletter-cta-container {
+          position: relative;
+          width: 100%; }
+          body.home .home-container .section-footer__newsletter .newsletter-cta-container .newsletter-cta_input {
+            margin: 0;
+            padding-right: 1rem; }
+          body.home .home-container .section-footer__newsletter .newsletter-cta-container .newsletter-btn {
+            position: absolute;
+            top: 50%;
+            right: 0.5rem;
+            transform: translateY(-50%);
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+            border: none;
+            background-color: #4da0e3;
+            color: #fff;
+            border-radius: 50px;
+            height: 80%;
+            cursor: pointer; }
+          body.home .home-container .section-footer__newsletter .newsletter-cta-container .newsletter-btn:hover {
+            background-color: #0056b3; }
+    body.home .home-container .section-footer_bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem 0; }
+      body.home .home-container .section-footer_bottom .footer-logo {
+        height: 2rem; }
+      body.home .home-container .section-footer_bottom .footer-bottom-section {
+        display: flex;
+        flex-direction: column; }
+        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-subHeader {
+          font-size: 1.8rem;
+          font-size: 500;
+          text-transform: uppercase;
+          margin-bottom: 2rem; }
+        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links,
+        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links {
+          display: flex;
+          align-items: center;
+          gap: 1rem; }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links:not(:last-child),
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links:not(:last-child) {
+            margin-bottom: 1.2rem; }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-icon,
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-icon {
+            font-size: 1.4rem; }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-item,
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-item {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: white; }
+        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links {
+          font-size: 1.5rem;
+          text-transform: uppercase; }
+        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials {
+          display: grid;
+          font-size: 3rem;
+          grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+          gap: 2rem;
+          justify-content: center;
+          align-items: center;
+          height: max-content; }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon {
+            transition: all .3s ease; }
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon:hover {
+              transform: scale(1.1); }
 
 .naira-input-container input {
   padding-left: 3rem; }
