@@ -434,8 +434,13 @@ body.home {
 
       .section-footer {
          padding: 3rem 3rem;
-         background-color: $color-secondary-900;
-         color: white;
+         background-color: $color-primary-100;
+
+         background-image: linear-gradient(to bottom, rgba($color-primary-400, .9), rgba($color-primary-200, .9)), url(../img/footer-image.jpeg);
+         background-size: cover;
+         background-position: center;
+         color: $color-secondary-950;
+         // color: white;
          height: max-content;
 
          .footer-container {
@@ -448,15 +453,16 @@ body.home {
          &__newsletter {
             display: flex;
             justify-content: space-between;
-            gap: 3rem;
+            align-items: center;
+            gap: 1.3rem;
             padding: 4rem 0;
             border-bottom: .1px solid white;
 
             .newsletter-text {
-               width: 50%;
+               width: 45%;
 
                .footer-heading {
-                  font-size: 4.5rem;
+                  font-size: 3rem;
                   font-weight: 700;
                   margin-bottom: 1.2rem;
                }
@@ -468,7 +474,7 @@ body.home {
             }
 
             .newsletter-cta {
-               width: 40%;
+               width: 47%;
 
                &-container {
                   position: relative;
@@ -476,7 +482,20 @@ body.home {
 
                   .newsletter-cta_input {
                      margin: 0;
-                     padding-right: 1rem;
+                     padding-right: 10rem;
+
+
+                     &:focus,
+                     &:valid {
+                        background-color: $color-grey-light-1;
+                        box-shadow: 0 0 0.2rem 0.2rem rgba($color-secondary-100, .96);
+                     }
+
+                     &:active {
+
+
+                        box-shadow: inset 0 1px $color-secondary-700, 0 3px $color-secondary-700;
+                     }
                   }
 
                   .newsletter-btn {
@@ -487,16 +506,26 @@ body.home {
                      padding: 0.5rem 2rem;
                      font-size: 1rem;
                      border: none;
-                     background-color: $color-secondary-400;
+                     background: linear-gradient(to bottom, $color-primary-500, $color-primary-600);
                      color: #fff;
                      border-radius: 50px;
                      height: 80%;
                      cursor: pointer;
+
+                     &:hover {
+                        background: linear-gradient(to bottom, $color-primary-600, $color-primary-700);
+                        box-shadow: inset 0 0 0 2px $color-primary-600;
+                     }
+
+                     &:active {
+                        background: linear-gradient(to bottom, $color-primary-700, $color-primary-800);
+                        background-color: $color-grey-dark-1;
+
+                        box-shadow: inset 0 1px $color-primary-700, 0 3px $color-primary-700;
+                     }
                   }
 
-                  .newsletter-btn:hover {
-                     background-color: #0056b3;
-                  }
+
                }
             }
          }
@@ -540,7 +569,7 @@ body.home {
                   .link-item {
                      font-size: 1.2rem;
                      text-transform: uppercase;
-                     color: white;
+                     color: $color-secondary-950;
                      cursor: pointer;
                   }
                }
@@ -554,7 +583,7 @@ body.home {
                   display: grid;
                   font-size: 3rem;
                   grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-                  gap: 2rem;
+                  gap: 1rem;
                   justify-content: center;
                   align-items: center;
                   height: max-content;
