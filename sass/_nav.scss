@@ -1,22 +1,27 @@
 .navigation-header {
    position: absolute;
    top: 2rem;
-   left: 50%;
+   left: 0;
+   right: 0;
    z-index: 9999999;
-   transform: translateX(-50%);
-
-   // background-image: linear-gradient(to right, rgba($color-primary-light, 1), rgba($color-primary, .7));
+   // transform: translateX(-50%);
    background-color: $color-primary-50;
    display: flex;
    justify-content: space-between;
    align-items: center;
    height: 7rem;
-   width: 100rem;
-   padding: 2rem 3rem;
+   max-width: 100rem;
+   width: 80%;
+   padding: 2rem;
    border-radius: 5px;
+   margin: 0 auto;
 
    .logo {
       height: 4.5rem;
+
+      @media only screen and (max-width:$bp-large) {
+         height: 3rem;
+      }
    }
 
    .main-nav-list {
@@ -24,6 +29,12 @@
       display: flex;
       gap: 1rem;
       align-items: center;
+
+      .button-group {
+         display: flex;
+         align-items: center;
+         gap: 1rem;
+      }
    }
 
    .main-nav-link:link,
@@ -32,7 +43,7 @@
       text-decoration: none;
       color: $color-primary-600;
       font-weight: 500;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       padding: 1rem;
 
       &::before {
@@ -70,6 +81,7 @@
       font-size: 1.2rem;
       padding: 1rem 1.5rem;
       margin-right: 0;
+      width: max-content;
 
       @media only screen and (max-width:$bp-big) {
          font-size: 3.5rem;
