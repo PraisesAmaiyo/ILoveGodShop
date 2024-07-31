@@ -90,7 +90,7 @@ body.home {
                   color: $color-grey-light-2;
 
                   @media only screen and (max-width:$bp-larger) {
-                     font-size: 1.3rem;
+                     font-size: 1.6rem;
                   }
                }
             }
@@ -131,19 +131,6 @@ body.home {
                   object-fit: cover;
                   object-position: center;
                   border-radius: 10px;
-
-                  //    @media only screen and (max-width:$bp-larger) {
-                  //       height: 50%
-                  //    }
-
-                  //    @media only screen and (max-width:$bp-big) {
-                  //       width: 80%;
-                  //    }
-
-                  //    @media only screen and (max-width:$bp-small) {
-                  //       width: 100%;
-                  //    }
-                  // }
                }
             }
 
@@ -158,26 +145,6 @@ body.home {
                   display: flex;
                   justify-content: center;
                   align-items: center;
-               }
-
-               .delivered-text {
-                  font-size: 1.4rem;
-                  font-weight: 600;
-                  color: $color-secondary-light ;
-                  margin-top: 1.5rem;
-
-                  @media only screen and (max-width:$bp-larger) {
-                     font-size: 1.5rem;
-                  }
-
-                  @media only screen and (max-width:$bp-big) {
-                     font-size: 3rem;
-                  }
-               }
-
-               .delivered-text span {
-                  color: $color-grey-light-1;
-                  font-weight: 700;
                }
             }
          }
@@ -323,7 +290,6 @@ body.home {
             }
 
             @media only screen and (max-width:$bp-medium) {
-               text-align: center;
                padding: 3rem 0;
             }
 
@@ -344,6 +310,10 @@ body.home {
             .feature-subtext {
                font-size: 1.3rem;
                font-weight: 400;
+
+               @media only screen and (max-width:$bp-mid) {
+                  font-size: 1.6rem;
+               }
             }
          }
       }
@@ -364,15 +334,13 @@ body.home {
 
          .abouts-container {
             max-width: 120rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding: 0 2rem;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(2, 50%);
             gap: 2rem;
             justify-content: center;
             align-items: center;
-
 
             @media only screen and (max-width:$bp-big) {
                padding: 0rem;
@@ -401,6 +369,10 @@ body.home {
                margin: 0 auto;
             }
 
+            @media only screen and (max-width:$bp-smaller) {
+               width: 100%;
+            }
+
 
             .about-image {
                width: 100%;
@@ -408,19 +380,6 @@ body.home {
                object-fit: cover;
                object-position: center;
                border-radius: 10px;
-
-               //    @media only screen and (max-width:$bp-larger) {
-               //       height: 50%
-               //    }
-
-               //    @media only screen and (max-width:$bp-big) {
-               //       width: 80%;
-               //    }
-
-               //    @media only screen and (max-width:$bp-small) {
-               //       width: 100%;
-               //    }
-               // }
             }
 
          }
@@ -455,6 +414,10 @@ body.home {
             .about-subtext {
                font-size: 1.3rem;
                font-weight: 400;
+
+               @media only screen and (max-width:$bp-mid) {
+                  font-size: 1.6rem;
+               }
             }
          }
       }
@@ -463,6 +426,14 @@ body.home {
          padding: 3rem 3rem;
          background-color: $color-secondary-100;
          height: max-content;
+
+         @media only screen and (max-width:$bp-larger) {
+            padding: 2rem 1.5rem;
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+            padding: 2rem 1.5rem 5rem 1.5rem;
+         }
 
          .testimonial-container {
             max-width: 120rem;
@@ -474,20 +445,54 @@ body.home {
             gap: 2rem;
             justify-content: center;
             align-items: center;
+
+            @media only screen and (max-width:$bp-big) {
+               padding: 0rem;
+               gap: 1rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               grid-template-columns: 1fr;
+               grid-template-rows: repeat(2, min-content);
+               gap: 2rem;
+            }
          }
 
          &__texts {
-            padding: 0 6rem;
+            padding: 0 2rem;
+
+            @media only screen and (max-width:$bp-larger) {
+               padding: 0 1rem;
+               padding-right: 0;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               text-align: left;
+               padding: 3rem 0 1rem 0;
+
+               .tag {
+                  text-align: left;
+               }
+            }
 
             .testimonial-heading {
-               font-size: 4.5rem;
+               font-size: 3.7rem;
                font-weight: 700;
                margin-bottom: 1.2rem;
+
+               @media only screen and (max-width:$bp-larger) {
+                  font-size: 2.7rem;
+               }
             }
 
             .testimonial-subtext {
                font-size: 1.3rem;
                font-weight: 400;
+
+
+               @media only screen and (max-width:$bp-mid) {
+                  font-size: 1.6rem;
+               }
             }
          }
       }
@@ -495,18 +500,28 @@ body.home {
       .section-footer {
          padding: 3rem 3rem;
          background-color: $color-primary-100;
-
          background-image: linear-gradient(to bottom, rgba($color-primary-400, .9), rgba($color-primary-200, .9)), url(../img/footer-image.jpeg);
          background-size: cover;
          background-position: center;
          color: $color-secondary-950;
-         // color: white;
          height: max-content;
+
+         @media only screen and (max-width:$bp-larger) {
+            padding: 2rem 1.5rem;
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+            padding: 2rem 1.5rem 5rem 1.5rem;
+         }
 
          .footer-container {
             max-width: 120rem;
             padding: 0 2rem;
             margin: 0 auto;
+
+            @media only screen and (max-width:$bp-big) {
+               padding: 0rem;
+            }
          }
 
          &__newsletter {
@@ -517,23 +532,56 @@ body.home {
             padding: 4rem 0;
             border-bottom: .1px solid white;
 
+            @media only screen and (max-width:$bp-medium) {
+               padding: 2rem 0;
+               flex-direction: column;
+               justify-content: center;
+            }
+
             .newsletter-text {
                width: 45%;
+
+               @media only screen and (max-width:$bp-medium) {
+                  width: 100%;
+                  text-align: center;
+               }
 
                .footer-heading {
                   font-size: 3rem;
                   font-weight: 700;
                   margin-bottom: 1.2rem;
+
+                  @media only screen and (max-width:$bp-mid) {
+                     font-size: 2.5em;
+                     margin-bottom: 1rem;
+                  }
                }
 
                .footer-subtext {
                   font-size: 1.3rem;
                   font-weight: 400;
+
+                  @media only screen and (max-width:$bp-mid) {
+                     font-size: 1.6rem;
+                  }
                }
             }
 
             .newsletter-cta {
                width: 47%;
+
+               @media only screen and (max-width:$bp-mid) {
+                  text-align: center;
+                  width: 80%;
+               }
+
+               @media only screen and (max-width:$bp-small) {
+                  width: 100%;
+               }
+
+               @media only screen and (max-width:$bp-small) {
+                  width: 100%;
+               }
 
                &-container {
                   position: relative;
@@ -541,19 +589,17 @@ body.home {
 
                   .newsletter-cta_input {
                      margin: 0;
+                     padding: 1rem;
                      padding-right: 10rem;
+                     height: min-content;
+                     background-color: $color-grey-light-1;
 
-
-                     &:focus,
-                     &:valid {
-                        background-color: $color-grey-light-1;
-                        box-shadow: 0 0 0.2rem 0.2rem rgba($color-secondary-100, .96);
+                     &:focus {
+                        background-color: $color-secondary-100;
                      }
 
-                     &:active {
-
-
-                        box-shadow: inset 0 1px $color-secondary-700, 0 3px $color-secondary-700;
+                     &:focus {
+                        box-shadow: none;
                      }
                   }
 
@@ -562,7 +608,7 @@ body.home {
                      top: 50%;
                      right: 0.5rem;
                      transform: translateY(-50%);
-                     padding: 0.5rem 2rem;
+                     padding: 0.5rem 1rem;
                      font-size: 1rem;
                      border: none;
                      background: linear-gradient(to bottom, $color-primary-500, $color-primary-600);
@@ -590,31 +636,67 @@ body.home {
          }
 
          &_bottom {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content 1fr;
+            justify-content: center;
+            align-items: center;
+            row-gap: 4rem;
             padding: 4rem 0;
+            // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+            .footer-group {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               gap: 1.5rem;
+               justify-content: space-between;
+
+               @media only screen and (max-width:$bp-small) {
+                  grid-template-columns: 1fr;
+                  grid-template-rows: auto;
+                  gap: 3rem;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+               }
+
+            }
 
             .footer-logo {
                height: 2rem;
+               margin: 0 auto;
             }
 
             .footer-bottom-section {
                display: flex;
                flex-direction: column;
+               width: max-content;
+               margin: 0 auto;
 
-               .footer-subHeader {
-                  font-size: 1.8rem;
-                  font-size: 500;
-                  text-transform: uppercase;
-                  margin-bottom: 2rem;
+               @media only screen and (max-width:$bp-small) {
+                  text-align: center;
                }
 
+               .footer-subHeader {
+                  font-size: 1.5rem;
+                  font-weight: 500;
+                  text-transform: uppercase;
+                  margin-bottom: 2rem;
+
+                  @media only screen and (max-width:$bp-small) {
+                     margin-bottom: 1rem;
+                  }
+               }
 
                .footer-icon_links,
                .footer-links {
                   display: flex;
                   align-items: center;
                   gap: 1rem;
+
+                  @media only screen and (max-width:$bp-small) {
+                     justify-content: center;
+                  }
 
                   &:not(:last-child) {
                      margin-bottom: 1.2rem;
@@ -633,15 +715,11 @@ body.home {
                   }
                }
 
-               .footer-links {
-                  font-size: 1.5rem;
-                  text-transform: uppercase;
-               }
 
                .footer-socials {
                   display: grid;
-                  font-size: 3rem;
-                  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+                  font-size: 2rem;
+                  grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
                   gap: 1rem;
                   justify-content: center;
                   align-items: center;

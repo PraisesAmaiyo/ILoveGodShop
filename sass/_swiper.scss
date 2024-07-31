@@ -3,12 +3,14 @@ div.swiper-3 {
    width: 100%;
    height: auto;
    padding: 0 4rem 6rem 4rem;
-
    position: relative;
    padding-bottom: 4rem;
    overflow: hidden;
 
 
+   @media only screen and (max-width:$bp-larger) {
+      padding: 0 2rem 6rem 2rem;
+   }
 
    .testimonial-item {
       text-align: center;
