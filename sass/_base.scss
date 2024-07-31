@@ -120,29 +120,6 @@ body {
    }
 }
 
-// .container {
-//    overflow-x: hidden;
-//    display: grid;
-//    grid-template-columns: [sidebar-start] 23% [sidebar-end main-start] 1fr [main-end];
-//    grid-template-rows: [rowOne-start] 100vh [rowOne-end rowTwo-start] min-content [rowTwo-end];
-
-//    @media only screen and (max-width:$bp-big) {
-//       grid-template-columns: [main-start] 100vw [main-end];
-//       grid-template-rows: [rowOne-start] 93vh [rowOne-end];
-//       margin-bottom: 7rem;
-//       // grid-template-rows: [rowOne-start] 100% [rowOne-end rowTwo-start] 17% [rowTwo-end];
-//    }
-
-//    .sidebar-fixed {
-//       // Change this width when you adjust the width of [sidebar-start] 23% [sidebar-end] above.
-//       width: 23%;
-
-//       @media only screen and (max-width:$bp-big) {
-//          width: 100%;
-//       }
-//    }
-// }
-
 .card {
    background-color: $color-primary-light-1;
    background-size: cover;

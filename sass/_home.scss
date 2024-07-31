@@ -1,10 +1,5 @@
 body.home {
-   // padding: 5rem 2rem;
-
    .home-container {
-      // width: 120rem;
-      // position: relative;
-
       .section-hero {
          background-color: $color-primary-50;
          padding: 5rem 3rem;
@@ -13,7 +8,6 @@ body.home {
          @media only screen and (max-width:$bp-larger) {
             padding: 5rem 1.5rem;
          }
-
 
          .hero {
             padding: 0 3rem;
@@ -26,12 +20,10 @@ body.home {
             gap: 1.5rem;
             align-items: center;
             justify-content: center;
-
             background-image: linear-gradient(to right, rgba($color-primary-800, .9), rgba($color-primary-900, .9)), url(../img/home.jpeg);
             background-size: cover;
             background-position: center;
             border-radius: 25px;
-
 
             @media only screen and (max-width:$bp-larger) {
                padding: 0rem 1.6rem;
@@ -184,8 +176,6 @@ body.home {
                grid-template-rows: repeat(2, min-content);
                gap: 2rem;
             }
-
-
          }
 
          .fill-space {
@@ -217,7 +207,6 @@ body.home {
                gap: 1.5rem;
 
                @media only screen and (max-width:$bp-small) {
-
                   display: flex;
                   flex-direction: column;
                }
@@ -263,7 +252,6 @@ body.home {
                   font-size: 1.5rem;
                   color: #333;
                   margin-bottom: .8rem;
-
 
                   @media only screen and (max-width:$bp-big) {
                      font-size: 1.2rem;
@@ -687,7 +675,7 @@ body.home {
                .footer-links {
                   display: flex;
                   align-items: center;
-                  gap: 1rem;
+                  gap: 1.5rem;
 
                   @media only screen and (max-width:$bp-small) {
                      justify-content: center;
@@ -707,6 +695,11 @@ body.home {
                      text-transform: uppercase;
                      color: $color-secondary-950;
                      cursor: pointer;
+                     transition: all 0.2s ease;
+
+                     &:hover {
+                        transform: scale(1.09);
+                     }
                   }
                }
 

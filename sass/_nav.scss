@@ -1,10 +1,29 @@
+.initial-navigation {
+   display: flex;
+}
+
+.sticky-nav {
+   position: fixed !important;
+   top: 0 !important;
+   left: 0 !important;
+   right: 0 !important;
+   width: 100% !important;
+   max-width: 100% !important;
+   height: 8rem !important;
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   background-color: rgba($color-primary-50, 0.7) !important;
+   backdrop-filter: blur(5px);
+   box-shadow: 0 1.2rem 3.2rem rgba($color-primary-400, 0.2) !important;
+   border-radius: 0 !important;
+}
+
 .navigation-header {
    position: absolute;
    top: 2rem;
    left: 0;
    right: 0;
    z-index: 9999999;
-   // transform: translateX(-50%);
    background-color: $color-primary-50;
    display: flex;
    justify-content: space-between;
@@ -15,6 +34,7 @@
    padding: 2rem;
    border-radius: 5px;
    margin: 0 auto;
+   transition: all 0.3s ease;
 
    @media only screen and (max-width:$bp-larger) {
       width: 90%;
@@ -26,8 +46,6 @@
 
    .logo {
       height: 3.5rem;
-
-
    }
 
    .main-nav-list {
@@ -48,7 +66,7 @@
       display: inline-block;
       text-decoration: none;
       color: $color-primary-600;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.6rem;
       padding: 1rem;
 
@@ -70,16 +88,9 @@
 
    .main-nav-link:hover,
    .main-nav-link:active {
-
-      // background: linear-gradient(to bottom, $color-primary-600, $color-primary-700);
       padding: .5rem 1rem;
       box-shadow: inset 0 0 0 1px $color-primary;
       border-radius: 5px;
-
-      // &::before {
-      //    transition: .3s;
-      //    width: 100%;
-      // }
    }
 
    .hero-btn-dark,
@@ -102,22 +113,4 @@
          margin-top: 1.5rem;
       }
    }
-}
-
-.sticky .navigation-header {
-   position: fixed;
-   top: 0;
-   bottom: 0;
-   width: 100%;
-   height: 8rem;
-   padding-top: 0;
-   padding-bottom: 0;
-   background-image: linear-gradient(to right, rgba($color-primary, 2), rgba($color-primary-light, .93));
-   z-index: 999;
-   box-shadow: 0 1.2rem 3.2rem rgba(38, 93, 165, 0.388);
-}
-
-.sticky .section-hero,
-.sticky .section-registration {
-   margin-top: 8rem;
 }

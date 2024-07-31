@@ -11,37 +11,45 @@ allLinks.forEach(function (link) {
     const href = link.getAttribute('href');
     console.log(href);
 
-    // scroll back to top
     if (href === '#')
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       });
 
-    // Scroll to other links
     if (href !== '#' && href.startsWith('#')) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: 'smooth' });
       e.preventDefault();
     }
 
-    // CLose mobile navigation
     if (link.classList.contains('main-nav-link'))
       headerEl.classList.toggle('nav-open');
   });
 });
 
-// Toggle the active class for sideNavs
-const sideNavs = document.querySelectorAll('.side-nav_item');
+// Sticky Navigation
+const navigationHeader = document.querySelector('.navigation-header');
+const initialNavigation = document.querySelector('.initial-navigation');
+const stickyNavigation = document.querySelector('.sticky-nav');
+const sectionHero = document.querySelector('.section-hero');
 
-sideNavs.forEach((nav) => {
-  nav.addEventListener('click', () => {
-    nav.classList.add('active');
+document.addEventListener('DOMContentLoaded', function () {
+  let lastScrollTop = 0;
 
-    sideNavs.forEach((otherNav) => {
-      if (otherNav !== nav) {
-        otherNav.classList.remove('active');
-      }
-    });
-  });
+  function handleScroll() {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 90 && scrollTop > lastScrollTop) {
+      navigationHeader.classList.add('sticky-nav');
+      navigationHeader.classList.remove('initial-navigation');
+    } else if (scrollTop <= 90 && scrollTop < lastScrollTop) {
+      navigationHeader.classList.remove('sticky-nav');
+      navigationHeader.classList.add('initial-navigation');
+    }
+
+    lastScrollTop = scrollTop;
+  }
+
+  window.addEventListener('scroll', handleScroll);
 });
