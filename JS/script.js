@@ -2,9 +2,9 @@ const btnNavEl = document.querySelector('.btn-mobile-nav');
 const allLinks = document.querySelectorAll('a:link');
 const headerEl = document.querySelector('.navigation-header');
 
-btnNavEl.addEventListener('click', function () {
-  headerEl.classList.toggle('nav-open');
-});
+// btnNavEl.addEventListener('click', function () {
+//   headerEl.classList.toggle('nav-open');
+// });
 
 allLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
