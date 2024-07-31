@@ -121,6 +121,7 @@ body.home {
                @media only screen and (max-width:$bp-big) {
                   margin-top: 0rem;
                   padding: 2rem;
+                  height: 100%;
                }
 
 
@@ -188,16 +189,36 @@ body.home {
          height: max-content;
          background-color: $color-primary-50;
 
+         @media only screen and (max-width:$bp-larger) {
+            padding: 5rem 1.5rem;
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+            padding: 2rem 1.5rem 5rem 1.5rem;
+         }
+
          .features-container {
             max-width: 120rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding: 0 2rem;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(2, 50%);
-            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
             justify-content: center;
             align-items: center;
+
+            @media only screen and (max-width:$bp-big) {
+               padding: 0rem;
+               gap: 1rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               grid-template-columns: 1fr;
+               grid-template-rows: repeat(2, min-content);
+               gap: 2rem;
+            }
+
+
          }
 
          .fill-space {
@@ -211,28 +232,41 @@ body.home {
 
          &__cards {
             display: grid;
-            // grid-template-columns: repeat(2, 50%);
-            grid-template-columns: repeat(2, minmax(15rem, 1fr));
             grid-template-rows: repeat(2, 1fr);
             gap: 1.5rem;
             height: max-content;
 
+            @media only screen and (max-width:$bp-larger) {
+               gap: 1rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               padding-bottom: 3rem;
+            }
+
+            .feature-card_container {
+               display: grid;
+               grid-template-columns: repeat(2, minmax(12rem, 1fr));
+               gap: 1.5rem;
+
+               @media only screen and (max-width:$bp-small-extra) {
+
+                  display: flex;
+                  flex-direction: column;
+               }
+            }
+
             .feature-card {
                background-color: #fff;
                border-radius: 6px;
-               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-               padding: 4rem 1.5rem;
+               padding: 2rem 1.2rem;
                text-align: center;
                display: flex;
                flex-direction: column;
                transition: all 0.3s ease;
-               // height: 20rem;
-               // justify-content: center;
-               // max-width: 350px;
 
                &:hover {
-                  // transform: translateY(-10px);
                   background-image: linear-gradient(to right, rgba($color-secondary-500, 0.93), rgba($color-secondary-700, 0.93)), url(/img/main-image-2.jpg);
                   background-size: cover;
                   background-position: center;
@@ -262,23 +296,45 @@ body.home {
                   font-size: 1.5rem;
                   color: #333;
                   margin-bottom: .8rem;
+
+
+                  @media only screen and (max-width:$bp-big) {
+                     font-size: 1.2rem;
+                  }
                }
 
                &__text {
                   font-size: 1.2rem;
                   color: #666;
+
+                  @media only screen and (max-width:$bp-big) {
+                     font-size: 1rem;
+                  }
                }
             }
          }
 
          &__texts {
-            padding: 0 6rem;
+            padding: 0 2rem;
 
+            @media only screen and (max-width:$bp-larger) {
+               padding: 0 1rem;
+               padding-right: 0;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               text-align: center;
+               padding: 3rem 0;
+            }
 
             .feature-heading {
                font-size: 3.7rem;
                font-weight: 700;
                margin-bottom: 1.2rem;
+
+               @media only screen and (max-width:$bp-larger) {
+                  font-size: 2.7rem;
+               }
 
                span {
                   color: $color-primary-900;
