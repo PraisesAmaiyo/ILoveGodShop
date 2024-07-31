@@ -46,6 +46,11 @@
 
    .logo {
       height: 3.5rem;
+
+
+      @media only screen and (max-width:$bp-big) {
+         height: 2.2rem;
+      }
    }
 
    .main-nav-list {
@@ -82,7 +87,7 @@
       }
 
       @media only screen and (max-width:$bp-big) {
-         font-size: 4rem;
+         font-size: 2rem;
       }
    }
 
@@ -93,24 +98,24 @@
       border-radius: 5px;
    }
 
-   .hero-btn-dark,
-   .hero-btn-light {
-      font-size: 1.2rem;
-      padding: 1rem 1.5rem;
-      margin-right: 0;
-      width: max-content;
+   .button-group {
 
       @media only screen and (max-width:$bp-big) {
-         font-size: 3.5rem;
-         margin-top: 4rem;
+         flex-direction: column;
+         gap: 2rem;
       }
-   }
 
-   .main-nav-link.hero-btn-light {
-      color: $color-grey-dark-1;
+      .hero-btn-dark {
+         font-size: 1.2rem;
+         padding: 1rem 1.5rem;
+         margin-right: 0;
+         width: max-content;
 
-      @media only screen and (max-width:$bp-big) {
-         margin-top: 1.5rem;
+         @media only screen and (max-width:$bp-big) {
+            font-size: 1.5rem;
+
+            margin: 1rem 0;
+         }
       }
    }
 }
