@@ -249,7 +249,7 @@ body.home {
                grid-template-columns: repeat(2, minmax(12rem, 1fr));
                gap: 1.5rem;
 
-               @media only screen and (max-width:$bp-small-extra) {
+               @media only screen and (max-width:$bp-small) {
 
                   display: flex;
                   flex-direction: column;
@@ -350,9 +350,17 @@ body.home {
 
       .section-abouts {
          padding: 3rem 3rem;
-         // background-color: $color-grey-light-1;
          background-color: #fffefe;
          height: max-content;
+
+
+         @media only screen and (max-width:$bp-larger) {
+            padding: 2rem 1.5rem;
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+            padding: 2rem 1.5rem 5rem 1.5rem;
+         }
 
          .abouts-container {
             max-width: 120rem;
@@ -364,6 +372,18 @@ body.home {
             gap: 2rem;
             justify-content: center;
             align-items: center;
+
+
+            @media only screen and (max-width:$bp-big) {
+               padding: 0rem;
+               gap: 1rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               grid-template-columns: 1fr;
+               grid-template-rows: repeat(2, min-content);
+               gap: 2rem;
+            }
          }
 
          &_image {
@@ -376,10 +396,10 @@ body.home {
             overflow: hidden;
             border-radius: 10px;
 
-            // @media only screen and (max-width:$bp-big) {
-            //    text-align: center;
-            //    padding-top: 4rem;
-            // }
+            @media only screen and (max-width:$bp-medium) {
+               width: 80%;
+               margin: 0 auto;
+            }
 
 
             .about-image {
@@ -406,12 +426,30 @@ body.home {
          }
 
          &__texts {
-            padding: 0 6rem;
+            padding: 0 2rem;
+
+            @media only screen and (max-width:$bp-larger) {
+               padding: 0 1rem;
+               padding-right: 0;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               text-align: left;
+               padding: 3rem 0 1rem 0;
+
+               .tag {
+                  text-align: left;
+               }
+            }
 
             .about-heading {
-               font-size: 4.5rem;
+               font-size: 3.7rem;
                font-weight: 700;
                margin-bottom: 1.2rem;
+
+               @media only screen and (max-width:$bp-larger) {
+                  font-size: 2.7rem;
+               }
             }
 
             .about-subtext {
@@ -467,8 +505,7 @@ body.home {
 
          .footer-container {
             max-width: 120rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding: 0 2rem;
             margin: 0 auto;
          }
 

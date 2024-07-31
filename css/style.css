@@ -228,7 +228,7 @@ body.home .home-container .section-features {
       display: grid;
       grid-template-columns: repeat(2, minmax(12rem, 1fr));
       gap: 1.5rem; }
-      @media only screen and (max-width: 25.5em) {
+      @media only screen and (max-width: 30.5em) {
         body.home .home-container .section-features__cards .feature-card_container {
           display: flex;
           flex-direction: column; } }
@@ -297,6 +297,12 @@ body.home .home-container .section-abouts {
   padding: 3rem 3rem;
   background-color: #fffefe;
   height: max-content; }
+  @media only screen and (max-width: 62.5em) {
+    body.home .home-container .section-abouts {
+      padding: 2rem 1.5rem; } }
+  @media only screen and (max-width: 38.6em) {
+    body.home .home-container .section-abouts {
+      padding: 2rem 1.5rem 5rem 1.5rem; } }
   body.home .home-container .section-abouts .abouts-container {
     max-width: 120rem;
     padding-left: 2rem;
@@ -307,6 +313,15 @@ body.home .home-container .section-abouts {
     gap: 2rem;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 50.3em) {
+      body.home .home-container .section-abouts .abouts-container {
+        padding: 0rem;
+        gap: 1rem; } }
+    @media only screen and (max-width: 38.6em) {
+      body.home .home-container .section-abouts .abouts-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, min-content);
+        gap: 2rem; } }
   body.home .home-container .section-abouts_image {
     display: flex;
     align-items: center;
@@ -316,6 +331,10 @@ body.home .home-container .section-abouts {
     padding: .5rem 2rem;
     overflow: hidden;
     border-radius: 10px; }
+    @media only screen and (max-width: 38.6em) {
+      body.home .home-container .section-abouts_image {
+        width: 80%;
+        margin: 0 auto; } }
     body.home .home-container .section-abouts_image .about-image {
       width: 100%;
       height: 100%;
@@ -323,11 +342,24 @@ body.home .home-container .section-abouts {
       object-position: center;
       border-radius: 10px; }
   body.home .home-container .section-abouts__texts {
-    padding: 0 6rem; }
+    padding: 0 2rem; }
+    @media only screen and (max-width: 62.5em) {
+      body.home .home-container .section-abouts__texts {
+        padding: 0 1rem;
+        padding-right: 0; } }
+    @media only screen and (max-width: 38.6em) {
+      body.home .home-container .section-abouts__texts {
+        text-align: left;
+        padding: 3rem 0 1rem 0; }
+        body.home .home-container .section-abouts__texts .tag {
+          text-align: left; } }
     body.home .home-container .section-abouts__texts .about-heading {
-      font-size: 4.5rem;
+      font-size: 3.7rem;
       font-weight: 700;
       margin-bottom: 1.2rem; }
+      @media only screen and (max-width: 62.5em) {
+        body.home .home-container .section-abouts__texts .about-heading {
+          font-size: 2.7rem; } }
     body.home .home-container .section-abouts__texts .about-subtext {
       font-size: 1.3rem;
       font-weight: 400; }
@@ -366,8 +398,7 @@ body.home .home-container .section-footer {
   height: max-content; }
   body.home .home-container .section-footer .footer-container {
     max-width: 120rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
     margin: 0 auto; }
   body.home .home-container .section-footer__newsletter {
     display: flex;
