@@ -1,4 +1,6 @@
 body.home {
+   overflow-x: hidden;
+
    .home-container {
       .section-hero {
          background-color: $color-primary-50;
@@ -256,14 +258,18 @@ body.home {
                   @media only screen and (max-width:$bp-big) {
                      font-size: 1.2rem;
                   }
+
+                  @media only screen and (max-width:$bp-small) {
+                     font-size: 2rem;
+                  }
                }
 
                &__text {
-                  font-size: 1.2rem;
+                  font-size: 1.3rem;
                   color: #666;
 
-                  @media only screen and (max-width:$bp-big) {
-                     font-size: 1rem;
+                  @media only screen and (max-width:$bp-small) {
+                     font-size: 1.6rem;
                   }
                }
             }
@@ -499,7 +505,7 @@ body.home {
          }
 
          @media only screen and (max-width:$bp-medium) {
-            padding: 2rem 1.5rem 5rem 1.5rem;
+            padding: 2rem 1.5rem;
          }
 
          .footer-container {

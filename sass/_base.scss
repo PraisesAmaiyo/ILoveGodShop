@@ -79,6 +79,8 @@ body {
    overflow: -webkit-scrollbar;
    scrollbar-width: thin;
 
+   overflow-x: hidden;
+
    &::-webkit-scrollbar {
       width: .8rem;
    }
