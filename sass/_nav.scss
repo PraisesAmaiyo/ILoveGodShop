@@ -16,12 +16,18 @@
    border-radius: 5px;
    margin: 0 auto;
 
-   .logo {
-      height: 4.5rem;
+   @media only screen and (max-width:$bp-larger) {
+      width: 90%;
+   }
 
-      @media only screen and (max-width:$bp-large) {
-         height: 3rem;
-      }
+   @media only screen and (max-width:$bp-big) {
+      width: 80%;
+   }
+
+   .logo {
+      height: 3.5rem;
+
+
    }
 
    .main-nav-list {
