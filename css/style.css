@@ -275,7 +275,7 @@ body.home .home-container .section-features {
       body.home .home-container .section-features__texts .feature-heading span {
         color: #87151a; }
     body.home .home-container .section-features__texts .feature-subtext {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 400; }
       @media only screen and (max-width: 35.6em) {
         body.home .home-container .section-features__texts .feature-subtext {
@@ -351,7 +351,7 @@ body.home .home-container .section-abouts {
         body.home .home-container .section-abouts__texts .about-heading {
           font-size: 2.7rem; } }
     body.home .home-container .section-abouts__texts .about-subtext {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 400; }
       @media only screen and (max-width: 35.6em) {
         body.home .home-container .section-abouts__texts .about-subtext {
@@ -406,7 +406,7 @@ body.home .home-container .section-testimonial {
         body.home .home-container .section-testimonial__texts .testimonial-heading {
           font-size: 2.7rem; } }
     body.home .home-container .section-testimonial__texts .testimonial-subtext {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 400; }
       @media only screen and (max-width: 35.6em) {
         body.home .home-container .section-testimonial__texts .testimonial-subtext {
@@ -460,7 +460,7 @@ body.home .home-container .section-footer {
             font-size: 2.5em;
             margin-bottom: 1rem; } }
       body.home .home-container .section-footer__newsletter .newsletter-text .footer-subtext {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 400; }
         @media only screen and (max-width: 35.6em) {
           body.home .home-container .section-footer__newsletter .newsletter-text .footer-subtext {
@@ -527,12 +527,9 @@ body.home .home-container .section-footer {
         body.home .home-container .section-footer_bottom .footer-group {
           grid-template-columns: 1fr;
           grid-template-rows: auto;
-          gap: 3rem;
-          align-items: center;
-          justify-content: center;
-          text-align: center; } }
+          gap: 3rem; } }
     body.home .home-container .section-footer_bottom .footer-logo {
-      height: 2rem;
+      height: 2.5rem;
       margin: 0 auto; }
     body.home .home-container .section-footer_bottom .footer-bottom-section {
       display: flex;

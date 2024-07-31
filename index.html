@@ -22,7 +22,7 @@
 
    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
-   <!-- <script defer type="module" src="JS/script.js"></script> -->
+   <script defer type="module" src="JS/script.js"></script>
    <script defer type="module" src="JS/login.js"></script>
    <script defer type="module" src="JS/swiper.js"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -38,7 +38,7 @@
 
 
 
-      <section class="section-hero">
+      <section class="section-hero" id="home">
          <header class="navigation-header">
             <a href="/index.html">
                <img class="logo" alt="ILoveGod logo" src="img/logo.png" />
@@ -46,9 +46,9 @@
 
             <nav class="main-nav">
                <ul class="main-nav-list">
-                  <li><a class="main-nav-link" href="/index.html">Home</a></li>
-                  <li><a class="main-nav-link" href="#">About</a></li>
-                  <li><a class="main-nav-link" href="#">Services</a></li>
+                  <li><a class="main-nav-link" href="#home">Home</a></li>
+                  <li><a class="main-nav-link" href="#about">About</a></li>
+                  <li><a class="main-nav-link" href="#services">Services</a></li>
                   <li><a class="main-nav-link" href="https://ilovegodshop.myshopify.com/" target="_blank">Shop</a></li>
 
                   <div class="button-group">
@@ -92,7 +92,7 @@
          </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="services">
          <div class="features-container">
 
             <div class="fill-space"></div>
@@ -156,7 +156,7 @@
          </div>
       </section>
 
-      <section class="section-abouts">
+      <section class="section-abouts" id="about">
 
          <div class="abouts-container">
 
@@ -185,7 +185,7 @@
          </div>
       </section>
 
-      <section class="section-testimonial">
+      <section class="section-testimonial" itemid="testimonial">
          <div class="testimonial-container">
 
 
@@ -384,23 +384,19 @@
                      </h2>
 
                      <div class="footer-links">
-                        <a class="link-item">Home</a>
+                        <a class="link-item" href="#home">Home</a>
                      </div>
 
                      <div class="footer-links">
-                        <a class="link-item">About</a>
+                        <a class="link-item" href="#about">About</a>
                      </div>
 
                      <div class="footer-links">
-                        <a class="link-item">Features</a>
+                        <a class="link-item" href="services">Services</a>
                      </div>
 
                      <div class="footer-links">
-                        <a class="link-item">Services</a>
-                     </div>
-
-                     <div class="footer-links">
-                        <a class="link-item">Shop</a>
+                        <a class="link-item" href="https://ilovegodshop.myshopify.com/" target="_blank">Shop</a>
                      </div>
                   </div>
 
