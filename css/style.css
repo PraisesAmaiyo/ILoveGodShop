@@ -93,7 +93,7 @@ body.home {
       @media only screen and (max-width: 35.6em) {
         body.home .home-container .section-hero .hero {
           grid-template-columns: 1fr;
-          grid-template-rows: 75vh 50vh;
+          grid-template-rows: 80vh 50vh;
           height: 100%; } }
       body.home .home-container .section-hero .hero-text {
         text-align: left;
