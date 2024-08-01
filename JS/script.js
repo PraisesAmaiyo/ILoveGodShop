@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleScroll() {
     const scrollTop = window.scrollY;
 
-    if (scrollTop > 90 && scrollTop > lastScrollTop) {
+    if (scrollTop > 40 && scrollTop > lastScrollTop) {
       navigationHeader.classList.add('sticky-nav');
       navigationHeader.classList.remove('initial-navigation');
-    } else if (scrollTop <= 90 && scrollTop < lastScrollTop) {
+    } else if (scrollTop <= 40 && scrollTop < lastScrollTop) {
       navigationHeader.classList.remove('sticky-nav');
       navigationHeader.classList.add('initial-navigation');
     }

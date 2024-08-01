@@ -66,6 +66,9 @@ body.home {
     @media only screen and (max-width: 62.5em) {
       body.home .home-container .section-hero {
         padding: 5rem 1.5rem; } }
+    @media only screen and (max-width: 38.6em) {
+      body.home .home-container .section-hero {
+        padding: 5rem .5rem; } }
     body.home .home-container .section-hero .hero {
       padding: 0 3rem;
       height: 94vh;
@@ -90,12 +93,7 @@ body.home {
       @media only screen and (max-width: 35.6em) {
         body.home .home-container .section-hero .hero {
           grid-template-columns: 1fr;
-          grid-template-rows: 70vh 50vh;
-          height: 100%; } }
-      @media only screen and (max-width: 35.6em) {
-        body.home .home-container .section-hero .hero {
-          grid-template-columns: 1fr;
-          grid-template-rows: 70vh 50vh;
+          grid-template-rows: 75vh 50vh;
           height: 100%; } }
       body.home .home-container .section-hero .hero-text {
         text-align: left;
@@ -109,14 +107,14 @@ body.home {
             margin-top: 2rem;
             text-align: center; } }
         body.home .home-container .section-hero .hero-text-main {
-          font-size: 4.5rem;
+          font-size: 5rem;
           line-height: 1.1;
           font-weight: 700;
           color: #fff;
           margin-bottom: 2.5rem; }
           @media only screen and (max-width: 62.5em) {
             body.home .home-container .section-hero .hero-text-main {
-              font-size: 3.5rem; } }
+              font-size: 5rem; } }
           @media only screen and (max-width: 50.3em) {
             body.home .home-container .section-hero .hero-text-main {
               margin-bottom: 2rem; } }
@@ -125,9 +123,6 @@ body.home {
           line-height: 1.2;
           font-weight: 500;
           color: #eef1f6; }
-          @media only screen and (max-width: 62.5em) {
-            body.home .home-container .section-hero .hero-text-mini {
-              font-size: 1.6rem; } }
       body.home .home-container .section-hero .hero-btn {
         margin-top: 2rem; }
         @media only screen and (max-width: 50.3em) {
@@ -147,7 +142,8 @@ body.home {
         @media only screen and (max-width: 50.3em) {
           body.home .home-container .section-hero .hero-image {
             margin-top: 0rem;
-            padding: 2rem;
+            padding: 0rem;
+            padding-bottom: 1rem;
             height: 100%; } }
         body.home .home-container .section-hero .hero-image_image {
           width: 100%;
@@ -251,7 +247,7 @@ body.home {
           margin-bottom: .8rem; }
           @media only screen and (max-width: 50.3em) {
             body.home .home-container .section-features__cards .feature-card__title {
-              font-size: 1.2rem; } }
+              font-size: 1.37rem; } }
           @media only screen and (max-width: 30.5em) {
             body.home .home-container .section-features__cards .feature-card__title {
               font-size: 2rem; } }
@@ -280,11 +276,11 @@ body.home {
         body.home .home-container .section-features__texts .feature-heading span {
           color: #87151a; }
       body.home .home-container .section-features__texts .feature-subtext {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 400; }
         @media only screen and (max-width: 35.6em) {
           body.home .home-container .section-features__texts .feature-subtext {
-            font-size: 1.6rem; } }
+            font-size: 1.7rem; } }
   body.home .home-container .section-abouts {
     padding: 3rem 3rem;
     background-color: #fffefe;
@@ -355,11 +351,11 @@ body.home {
           body.home .home-container .section-abouts__texts .about-heading {
             font-size: 2.7rem; } }
       body.home .home-container .section-abouts__texts .about-subtext {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 400; }
         @media only screen and (max-width: 35.6em) {
           body.home .home-container .section-abouts__texts .about-subtext {
-            font-size: 1.6rem; } }
+            font-size: 1.7rem; } }
   body.home .home-container .section-testimonial {
     padding: 3rem 3rem;
     background-color: #e3eefb;
@@ -409,11 +405,11 @@ body.home {
           body.home .home-container .section-testimonial__texts .testimonial-heading {
             font-size: 2.7rem; } }
       body.home .home-container .section-testimonial__texts .testimonial-subtext {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 400; }
         @media only screen and (max-width: 35.6em) {
           body.home .home-container .section-testimonial__texts .testimonial-subtext {
-            font-size: 1.6rem; } }
+            font-size: 1.7rem; } }
   body.home .home-container .section-footer {
     padding: 3rem 3rem;
     background-color: #ffe0e1;
@@ -462,11 +458,11 @@ body.home {
               font-size: 2.5em;
               margin-bottom: 1rem; } }
         body.home .home-container .section-footer__newsletter .newsletter-text .footer-subtext {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           font-weight: 400; }
           @media only screen and (max-width: 35.6em) {
             body.home .home-container .section-footer__newsletter .newsletter-text .footer-subtext {
-              font-size: 1.6rem; } }
+              font-size: 1.7rem; } }
       body.home .home-container .section-footer__newsletter .newsletter-cta {
         width: 47%; }
         @media only screen and (max-width: 35.6em) {
@@ -542,8 +538,8 @@ body.home {
           body.home .home-container .section-footer_bottom .footer-bottom-section {
             text-align: center; } }
         body.home .home-container .section-footer_bottom .footer-bottom-section .footer-subHeader {
-          font-size: 1.5rem;
-          font-weight: 500;
+          font-size: 1.6rem;
+          font-weight: 600;
           text-transform: uppercase;
           margin-bottom: 2rem; }
           @media only screen and (max-width: 30.5em) {
@@ -877,6 +873,12 @@ select {
   backdrop-filter: blur(5px);
   box-shadow: 0 1.2rem 3.2rem rgba(255, 101, 108, 0.2) !important;
   border-radius: 0 !important; }
+  @media only screen and (max-width: 62.5em) {
+    .sticky-nav {
+      height: 6rem !important; } }
+  @media only screen and (max-width: 50.3em) {
+    .sticky-nav {
+      height: 5rem !important; } }
 
 .navigation-header {
   position: absolute;
@@ -897,10 +899,14 @@ select {
   transition: all 0.3s ease; }
   @media only screen and (max-width: 62.5em) {
     .navigation-header {
-      width: 90%; } }
+      width: 90%;
+      height: 6rem;
+      padding: 1.5rem; } }
   @media only screen and (max-width: 50.3em) {
     .navigation-header {
-      width: 80%; } }
+      width: 80%;
+      height: 5rem;
+      padding: 1rem; } }
   .navigation-header .logo {
     height: 3.5rem; }
     @media only screen and (max-width: 50.3em) {

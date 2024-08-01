@@ -16,6 +16,14 @@
    backdrop-filter: blur(5px);
    box-shadow: 0 1.2rem 3.2rem rgba($color-primary-400, 0.2) !important;
    border-radius: 0 !important;
+
+   @media only screen and (max-width:$bp-larger) {
+      height: 6rem !important;
+   }
+
+   @media only screen and (max-width:$bp-big) {
+      height: 5rem !important;
+   }
 }
 
 .navigation-header {
@@ -38,10 +46,15 @@
 
    @media only screen and (max-width:$bp-larger) {
       width: 90%;
+      height: 6rem;
+      padding: 1.5rem;
+
    }
 
    @media only screen and (max-width:$bp-big) {
       width: 80%;
+      height: 5rem;
+      padding: 1rem;
    }
 
    .logo {
