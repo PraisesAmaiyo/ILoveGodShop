@@ -522,9 +522,10 @@ body.home {
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             gap: 3rem; } }
-      body.home .home-container .section-footer_bottom .footer-logo {
-        height: 2.5rem;
+      body.home .home-container .section-footer_bottom .footer-logo_container {
         margin: 0 auto; }
+        body.home .home-container .section-footer_bottom .footer-logo_container .footer-logo {
+          height: 2.5rem; }
       body.home .home-container .section-footer_bottom .footer-bottom-section {
         display: flex;
         flex-direction: column;

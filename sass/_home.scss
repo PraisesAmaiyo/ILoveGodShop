@@ -668,9 +668,12 @@ body.home {
                }
             }
 
-            .footer-logo {
-               height: 2.5rem;
+            .footer-logo_container {
                margin: 0 auto;
+
+               .footer-logo {
+                  height: 2.5rem;
+               }
             }
 
             .footer-bottom-section {
