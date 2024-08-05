@@ -36,8 +36,7 @@ $color-secondary-900: #173d63;
 $color-secondary-950: #0f2742;
 
 // FONT VARIABLES
-$font-primary: 'Inter Tight', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-primary: "Montserrat", sans-serif;
 
 // RESPONSIVE VARIABLES
 $bp-largest: 75em;
@@ -73,30 +72,7 @@ body {
    background-color: $color-grey-light-1;
    font-weight: 300;
    line-height: 1.4;
-
-   scrollbar-width: thin;
-   scrollbar-color: transparent transparent;
-   overflow: -webkit-scrollbar;
-   scrollbar-width: thin;
-
-   overflow-x: hidden;
-
-   &::-webkit-scrollbar {
-      width: .8rem;
-   }
-
-   &::-webkit-scrollbar-thumb {
-      background-color: $color-primary;
-      border-radius: 10px;
-
-      &:active {
-         background-color: $color-primary-light;
-      }
-   }
-
-   &::-webkit-scrollbar-track {
-      background-color: $color-primary-light-1;
-   }
+   // overflow-x: hidden;
 
    a {
       color: #007bff;
@@ -122,16 +98,15 @@ body {
    }
 }
 
-.card {
-   background-color: $color-primary-light-1;
-   background-size: cover;
-   border: 1px solid #ddd;
-   border-radius: 10px;
-   padding: 1rem 1.5rem;
-   box-shadow: rgba($color-primary-light, 0.3) 0px 1px 1px;
-   margin-bottom: 2rem;
+::-webkit-scrollbar {
+   width: 0.8rem;
+}
 
-   @media only screen and (max-width:$bp-medium) {
-      padding: 1rem;
-   }
+::-webkit-scrollbar-thumb {
+   border-radius: 1rem;
+   background-color: $color-primary-800;
+}
+
+::-webkit-scrollbar-track {
+   background-color: $color-primary-100;
 }

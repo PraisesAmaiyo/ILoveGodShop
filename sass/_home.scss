@@ -223,8 +223,26 @@ body.home {
                flex-direction: column;
                transition: all 0.3s ease;
 
+               &.secure:hover {
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.73), rgba($color-secondary-700, 0.93)), url(/img/secure.jpeg);
+                  background-size: cover;
+                  background-position: center;
+               }
+
+               &.interface:hover {
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.63), rgba($color-secondary-700, 0.93)), url(/img/interface.png);
+                  background-size: cover;
+                  background-position: center;
+               }
+
+               &.support:hover {
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.73), rgba($color-secondary-700, 0.93)), url(/img/support.jpeg);
+                  background-size: cover;
+                  background-position: center;
+               }
+
                &:hover {
-                  background-image: linear-gradient(to right, rgba($color-secondary-500, 0.93), rgba($color-secondary-700, 0.93)), url(/img/main-image-2.jpg);
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.73), rgba($color-secondary-700, 0.93)), url(/img/main-image-2.jpg);
                   background-size: cover;
                   background-position: center;
                   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
