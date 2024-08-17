@@ -145,6 +145,123 @@ body.home {
             display: flex;
             justify-content: center;
             align-items: center; } }
+  body.home .home-container .section-myaccount {
+    background-color: #fff1f2;
+    padding: 5rem 3rem;
+    position: relative; }
+    @media only screen and (max-width: 62.5em) {
+      body.home .home-container .section-myaccount {
+        padding: 5rem 1.5rem; } }
+    @media only screen and (max-width: 38.6em) {
+      body.home .home-container .section-myaccount {
+        padding: 5rem .5rem; } }
+    body.home .home-container .section-myaccount .myaccount {
+      padding: 0 3rem;
+      height: 94vh;
+      max-width: 120rem;
+      margin: 0 auto;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to right, rgba(164, 16, 22, 0.9), rgba(135, 21, 26, 0.9)), url(../img/main-image-2.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 25px; }
+      @media only screen and (max-width: 62.5em) {
+        body.home .home-container .section-myaccount .myaccount {
+          padding: 0rem 1.6rem; } }
+      @media only screen and (max-width: 38.6em) {
+        body.home .home-container .section-myaccount .myaccount {
+          padding: 0rem 1.2rem; } }
+      @media only screen and (max-width: 35.6em) {
+        body.home .home-container .section-myaccount .myaccount {
+          grid-template-columns: 1fr; } }
+      body.home .home-container .section-myaccount .myaccount-text {
+        text-align: center;
+        padding: 2rem;
+        padding-left: 3rem; }
+        @media only screen and (max-width: 62.5em) {
+          body.home .home-container .section-myaccount .myaccount-text {
+            padding: .5rem; } }
+        @media only screen and (max-width: 35.6em) {
+          body.home .home-container .section-myaccount .myaccount-text {
+            margin-top: 2rem;
+            text-align: center; } }
+        body.home .home-container .section-myaccount .myaccount-text-main {
+          font-size: 3.5rem;
+          line-height: 1.1;
+          font-weight: 700;
+          color: #fff;
+          margin-bottom: 2.5rem; }
+          @media only screen and (max-width: 62.5em) {
+            body.home .home-container .section-myaccount .myaccount-text-main {
+              font-size: 3rem; } }
+          @media only screen and (max-width: 50.3em) {
+            body.home .home-container .section-myaccount .myaccount-text-main {
+              margin-bottom: 2rem;
+              font-size: 2.5rem; } }
+        body.home .home-container .section-myaccount .myaccount-text-mini {
+          font-size: 2rem;
+          line-height: 1.2;
+          font-weight: 500;
+          color: #eef1f6; }
+          @media only screen and (max-width: 50.3em) {
+            body.home .home-container .section-myaccount .myaccount-text-mini {
+              margin-bottom: 1.2rem;
+              font-size: 2rem; } }
+      body.home .home-container .section-myaccount .myaccount .subscribe-input {
+        margin-top: 3rem;
+        width: 70%; }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-myaccount .myaccount .subscribe-input {
+            width: 80%; } }
+        @media only screen and (max-width: 35.6em) {
+          body.home .home-container .section-myaccount .myaccount .subscribe-input {
+            width: 90%; } }
+        @media only screen and (max-width: 25.5em) {
+          body.home .home-container .section-myaccount .myaccount .subscribe-input {
+            width: 100%; } }
+      body.home .home-container .section-myaccount .myaccount-btn {
+        margin-top: 2rem; }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-myaccount .myaccount-btn-dark {
+            font-size: 1.3rem; } }
+      body.home .home-container .section-myaccount .myaccount-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 100%;
+        padding: 2rem;
+        padding-right: 0;
+        margin-top: 3rem;
+        overflow: hidden;
+        border-radius: 10px; }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-myaccount .myaccount-image {
+            margin-top: 0rem;
+            padding: 0rem;
+            padding-bottom: 1rem;
+            height: 100%; } }
+        body.home .home-container .section-myaccount .myaccount-image_image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px; }
+      body.home .home-container .section-myaccount .myaccount .delivered-emails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem; }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-myaccount .myaccount .delivered-emails {
+            display: flex;
+            justify-content: center;
+            align-items: center; } }
   body.home .home-container .section-features {
     position: relative;
     padding: 6rem 3rem;
@@ -581,6 +698,67 @@ body.home {
               transform: scale(1.1);
               cursor: pointer; }
 
+.modal {
+  color: #87151a;
+  padding: 4rem 4rem 2rem 4rem;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: max-content;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #fff1f2;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 6px;
+  border-radius: 10px;
+  z-index: 1000000;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out; }
+  @media only screen and (max-width: 50.3em) {
+    .modal {
+      width: 80%; } }
+  @media only screen and (max-width: 35.6em) {
+    .modal {
+      width: 90%; } }
+  .modal.active, .modal.openModal {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .3s ease-in-out, visibility .2s; }
+  .modal .close {
+    position: absolute;
+    padding: 1rem;
+    top: 0px;
+    right: 0px;
+    color: #ec1a23;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer; }
+  .modal .confirmation-btn_container {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin-top: 5rem; }
+    .modal .confirmation-btn_container .hero-btn-dark {
+      font-size: 1.2rem;
+      padding-left: 1rem; }
+      .modal .confirmation-btn_container .hero-btn-dark.cancel-cta {
+        color: #a41016;
+        background: linear-gradient(to bottom, #fff1f2, #ffe0e1); }
+
+.home-container.blur {
+  backdrop-filter: blur(1px);
+  filter: blur(1px); }
+
+.home-container.blur::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  z-index: 2222222; }
+
 .naira-input-container input {
   padding-left: 3rem; }
 
@@ -681,16 +859,6 @@ select {
     .checkbox-container label {
       cursor: pointer; }
 
-.close {
-  position: absolute;
-  top: 0rem;
-  right: 1.5rem;
-  color: #205329;
-  font-size: 3rem;
-  padding: 1rem;
-  font-weight: bold;
-  cursor: pointer; }
-
 .hero-btn-dark,
 .hero-btn-light,
 .hero-btn-dark_square {
@@ -719,14 +887,14 @@ select {
   .hero-btn-dark_square:hover {
     background: linear-gradient(to bottom, #ec1a23, #c70e16);
     transform: scale(1.01);
-    box-shadow: inset 0 0 0 2px #ec1a23; }
+    box-shadow: inset 0 0 0 2px #c70e16; }
   .hero-btn-dark:active,
   .hero-btn-light:active,
   .hero-btn-dark_square:active {
     transform: scale(1);
     background: linear-gradient(to bottom, #c70e16, #a41016);
     background-color: #0F7A89;
-    box-shadow: inset 0 1px #c70e16, 0 3px #c70e16; }
+    box-shadow: inset 0 1px #c70e16, 0 1px 0 1px #c70e16; }
   .hero-btn-dark .button-link,
   .hero-btn-light .button-link,
   .hero-btn-dark_square .button-link {

@@ -9,7 +9,6 @@ btnNavEl.addEventListener('click', function () {
 allLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
     const href = link.getAttribute('href');
-    console.log(href);
 
     if (href === '#')
       window.scrollTo({
@@ -53,3 +52,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', handleScroll);
 });
+
+const main = document.querySelector('.home-container');
+const closeModalButton = document.querySelectorAll('.closeModal');
+const cancelButton = document.querySelector('.cancel-cta');
+const UnsubscribeButton = document.querySelector('.Unsubscribe-cta');
+
+//Cancel Suscription Modal
+const confirmationBtn = document.querySelector('.confirmationBtn');
+const confirmationModal = document.querySelector('.confirmation');
+
+if (confirmationBtn) {
+  confirmationBtn.addEventListener('click', openconfirmationModal);
+
+  function openconfirmationModal(event) {
+    event.stopPropagation();
+    confirmationModal.classList.toggle('openModal');
+
+    if (confirmationModal.classList.contains('openModal')) {
+      main.classList.add('blur');
+      main.classList.add('no-scroll');
+    } else {
+      main.classList.remove('blur');
+      main.classList.remove('no-scroll');
+    }
+  }
+}
+
+closeModalButton.forEach((closeButton) => {
+  closeButton.addEventListener('click', function () {
+    closeModal();
+  });
+});
+
+if (cancelButton) {
+  cancelButton.addEventListener('click', function () {
+    closeModal();
+  });
+}
+
+if (UnsubscribeButton) {
+  UnsubscribeButton.addEventListener('click', function () {
+    closeModal();
+  });
+}
+
+function closeModal() {
+  confirmationModal.classList.remove('openModal');
+
+  main.classList.remove('blur');
+  main.classList.remove('no-scroll');
+}

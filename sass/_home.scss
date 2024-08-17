@@ -143,6 +143,166 @@ body.home {
          }
       }
 
+      .section-myaccount {
+         background-color: $color-primary-50;
+         padding: 5rem 3rem;
+         position: relative;
+
+         @media only screen and (max-width:$bp-larger) {
+            padding: 5rem 1.5rem;
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+            padding: 5rem .5rem;
+         }
+
+         .myaccount {
+            padding: 0 3rem;
+            height: 94vh;
+            max-width: 120rem;
+            margin: 0 auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to right, rgba($color-primary-800, .9), rgba($color-primary-900, .9)), url(../img/main-image-2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 25px;
+
+            @media only screen and (max-width:$bp-larger) {
+               padding: 0rem 1.6rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               padding: 0rem 1.2rem;
+            }
+
+            @media only screen and (max-width:$bp-mid) {
+               grid-template-columns: 1fr;
+               // grid-template-rows: 80vh 50vh;
+               // height: 100%;
+            }
+
+            &-text {
+               text-align: center;
+               padding: 2rem;
+               padding-left: 3rem;
+
+               @media only screen and (max-width:$bp-larger) {
+                  padding: .5rem;
+               }
+
+               @media only screen and (max-width:$bp-mid) {
+                  margin-top: 2rem;
+                  text-align: center;
+               }
+
+               &-main {
+                  font-size: 3.5rem;
+                  line-height: 1.1;
+                  font-weight: 700;
+                  color: $color-grey-light-1;
+                  margin-bottom: 2.5rem;
+
+                  @media only screen and (max-width:$bp-larger) {
+                     font-size: 3rem;
+                  }
+
+                  @media only screen and (max-width:$bp-big) {
+                     margin-bottom: 2rem;
+                     font-size: 2.5rem;
+                  }
+               }
+
+               &-mini {
+                  font-size: 2rem;
+                  line-height: 1.2;
+                  font-weight: 500;
+                  color: $color-grey-light-2;
+
+                  @media only screen and (max-width:$bp-big) {
+                     margin-bottom: 1.2rem;
+                     font-size: 2rem;
+                  }
+               }
+            }
+
+            .subscribe-input {
+               margin-top: 3rem;
+               width: 70%;
+
+               @media only screen and (max-width:$bp-big) {
+                  width: 80%;
+               }
+
+               @media only screen and (max-width:$bp-mid) {
+                  width: 90%;
+               }
+
+               @media only screen and (max-width:$bp-small-extra) {
+                  width: 100%;
+               }
+            }
+
+            &-btn {
+               margin-top: 2rem;
+
+               &-dark {
+                  @media only screen and (max-width:$bp-big) {
+                     font-size: 1.3rem;
+                  }
+               }
+
+            }
+
+            &-image {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 90%;
+               width: 100%;
+               padding: 2rem;
+               padding-right: 0;
+               margin-top: 3rem;
+               overflow: hidden;
+               border-radius: 10px;
+
+               @media only screen and (max-width:$bp-big) {
+                  margin-top: 0rem;
+                  padding: 0rem;
+                  padding-bottom: 1rem;
+                  height: 100%;
+               }
+
+
+               &_image {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center;
+                  border-radius: 10px;
+               }
+            }
+
+            .delivered-emails {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 1.6rem;
+
+
+               @media only screen and (max-width:$bp-big) {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+               }
+            }
+         }
+      }
+
       .section-features {
          position: relative;
          padding: 6rem 3rem;
@@ -752,4 +912,83 @@ body.home {
          }
       }
    }
+}
+
+.modal {
+   color: $color-primary-900;
+   padding: 4rem 4rem 2rem 4rem;
+   opacity: 0;
+   visibility: hidden;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   height: max-content;
+   width: 70%;
+   transform: translate(-50%, -50%);
+   background-color: $color-primary-50;
+   box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 6px;
+   border-radius: 10px;
+   z-index: 1000000;
+   transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+
+   @media only screen and (max-width:$bp-big) {
+      width: 80%;
+   }
+
+   @media only screen and (max-width:$bp-mid) {
+      width: 90%;
+   }
+
+   &.active,
+   &.openModal {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .3s ease-in-out, visibility .2s;
+   }
+
+   .close {
+      position: absolute;
+      padding: 1rem;
+      top: 0px;
+      right: 0px;
+      color: $color-primary-600;
+      font-size: 2.5rem;
+      font-weight: bold;
+      cursor: pointer;
+   }
+
+
+   .confirmation-btn_container {
+      display: flex;
+      gap: 1rem;
+      justify-content: end;
+      margin-top: 5rem;
+
+      .hero-btn-dark {
+         font-size: 1.2rem;
+         padding-left: 1rem;
+
+         &.cancel-cta {
+            color: $color-primary-800;
+            background: linear-gradient(to bottom, $color-primary-50, $color-primary-100);
+         }
+      }
+   }
+
+}
+
+.home-container.blur {
+   backdrop-filter: blur(1px);
+   filter: blur(1px);
+}
+
+.home-container.blur::before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.46);
+   z-index: 2222222;
 }
